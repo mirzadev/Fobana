@@ -1,0 +1,54 @@
+.home_intro {
+  margin: 1rem 4rem;
+  color: black;
+}
+
+.home_intro h1 {
+  font-size: 2.65rem;
+}
+.home_intro p {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.homePg_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.home_logo {
+  margin-right: 1rem;
+}
+
+.home_beng_title {
+  margin-left: 1rem;
+}
+
+#featured_Album {
+  font-family: "Gill Sans MT";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.65rem;
+}
+
+.carousel-img-display {
+  max-width: fit-content;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .home_intro {
+    margin: 1rem 0.1rem;
+    color: black;
+  }
+  .home_intro h1 {
+    font-size: 2rem;
+  }
+  .home_intro p {
+    font-size: 1rem;
+  }
+}

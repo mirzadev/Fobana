@@ -1,0 +1,92 @@
+.activity-submenu {
+  margin-top: 1.2rem;
+  width: 17rem;
+  position: absolute;
+  list-style: none;
+  text-align: start;
+  padding: 1rem 0.1rem;
+  background: rgb(179, 190, 199, 0.5);
+  border: solid rgb(165, 173, 179);
+  border-radius: 0.2rem;
+}
+
+.dropdown-links {
+  text-decoration: none;
+  color: navy;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.7rem 0.3rem;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+}
+.dropdown-links:hover {
+  color: rgb(56, 56, 246);
+}
+
+#activity-drop-menu {
+  margin-left: 0.5rem;
+}
+
+#activity-menu {
+  text-decoration: none;
+  color: navy;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.7rem 0.1rem;
+  white-space: nowrap;
+}
+
+#activity-menu:hover {
+  color: blue;
+}
+.activity-submenu li {
+  padding: 0.3rem;
+}
+
+.activity-submenu.clicked {
+  display: none;
+}
+
+.submenu-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 3rem;
+  display: block;
+}
+
+@media screen and (max-width: 850px) {
+  .activity-submenu {
+    width: 6rem;
+    padding: 0.5rem 0.3rem;
+    background: rgb(67, 141, 238);
+    border: solid rgb(67, 141, 238);
+  }
+
+  #activity-menu {
+    text-decoration: none;
+    color: navy;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.7rem 0.6rem;
+    white-space: nowrap;
+  }
+  .dropdown-links {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.5rem 0.1rem;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+  }
+  .dropdown-links:hover {
+    background: none;
+    color: goldenrod;
+    display: block;
+  }
+}

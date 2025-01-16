@@ -1,0 +1,196 @@
+.about-container {
+  margin: 8rem 8rem;
+  color: black;
+}
+
+.about-container h1 {
+  font-size: 2.65rem;
+  font-family: "Lucida Sans";
+  font-weight: bold;
+}
+
+.members-heading-subTitle {
+  font-size: 1.2rem;
+  font-family: "Gill Sans MT";
+  padding-bottom: 0.3rem;
+  font-style: italic;
+}
+
+.aboutUs-description {
+  font-size: 1.4rem;
+  font-family: "Lucida Sans";
+  padding-bottom: 0.3rem;
+  text-align: justify;
+}
+.about-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lucida Sans";
+  padding-bottom: 0.3rem;
+}
+
+.kp-members-cart {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-family: "Lucida Sans";
+  padding-bottom: 0.3rem;
+  text-align: justify;
+}
+
+.kp-members-cart h3 {
+  font-size: 1.2rem;
+}
+
+.kp-members-cart p {
+  font-size: 1.2rem;
+}
+
+.kp-members-area1,
+.kp-members-area2 {
+  width: 20%;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.19);
+  border-radius: 7px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.kp-members-area1 {
+  margin-right: 4rem;
+}
+
+.kp-members-area2 {
+  margin-left: 4rem;
+}
+
+.kp-members-area-image {
+  width: auto;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.kp-members-area-image img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s ease-in-out;
+  border-radius: 7px;
+}
+
+.kp-members-area-image:hover img {
+  transform: scale(1.3);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+/* .instagram-section {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+} */
+.social-media a:hover {
+  transform: scale(1.2);
+}
+
+#social-instagram {
+  margin-left: 1.5rem;
+}
+
+#social-twiter {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.life_at_AD {
+  margin-top: 4rem;
+}
+
+.Official_Contact {
+  font-family: "Lucida Sans";
+  font-size: 1.2rem;
+  margin-top: 4rem;
+}
+
+.ContactInfo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.office-loc {
+  margin-right: 3rem;
+}
+.office-loc a:hover,
+.email-contact a:hover {
+  color: blueviolet;
+}
+.office-loc a,
+.email-contact a {
+  color: black;
+  text-decoration: none;
+}
+.tel-contact {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.phoneNumber:hover {
+  color: blueviolet;
+}
+.email-contact {
+  margin-left: 3rem;
+}
+.office-loc-logo {
+  height: 5rem;
+  width: 5rem;
+}
+.ContactInfo h2 {
+  margin-top: 0.75rem;
+}
+.map-location {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-bottom: -20rem;
+}
+
+@media screen and (max-width: 850px) {
+  .about-container {
+    margin: 4rem 4rem;
+  }
+
+  .about-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.3rem;
+  }
+  .about-container p {
+    font-size: 1rem;
+  }
+  .kp-members-cart {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kp-members-cart h3 {
+    font-size: 1rem;
+  }
+  .kp-members-cart p {
+    font-size: 1rem;
+  }
+
+  .kp-members-area1,
+  .kp-members-area2 {
+    width: 100%;
+  }
+  .kp-members-area1 {
+    margin-right: 0;
+  }
+  .kp-members-area2 {
+    margin-left: 0;
+  }
+}

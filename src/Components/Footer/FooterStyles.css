@@ -1,0 +1,224 @@
+.footer {
+  padding: 0.5rem 1rem;
+  background: rgb(91, 91, 250);
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-title {
+  display: flex;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  text-align: start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer h4 {
+  font-size: 1.5rem;
+  padding: 1rem 0 0.8rem 0;
+}
+
+.twiter {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-div h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+}
+
+.useful-links h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.link-menues {
+  display: flex;
+}
+
+.link-menu-1,
+.link-menu-2,
+.link-menu-3 {
+  display: flex;
+  flex-direction: column;
+}
+.link-menu-1,
+.link-menu-2 {
+  padding-right: 3rem;
+}
+
+.useful-links a:hover {
+  color: greenyellow;
+}
+
+.contact-footer_items {
+  display: flex;
+}
+
+.footer-contact-us h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.location-address,
+.location-address1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+}
+
+.location-address p,
+.location-address1 P,
+.telephone-number,
+.email-address {
+  font-size: 1rem;
+}
+
+.Tel_email {
+  margin-left: 3rem;
+}
+
+.loc_address_cont {
+  margin-top: -1rem;
+}
+
+.footer-contact-us a img:hover {
+  transform: scale(1.2);
+}
+
+.telephone,
+.email {
+  display: flex;
+}
+
+.telephone-number,
+.email-address {
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+}
+
+.telephone-number {
+  margin-top: 0.2rem;
+}
+.email-address {
+  margin-top: 0.2rem;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer-contact-us a:hover {
+  color: greenyellow;
+}
+
+.copyright-note {
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.copyright-note a {
+  text-decoration: none;
+  color: #fafafa;
+  margin-left: 1rem;
+}
+
+.copyright-note a:hover {
+  color: greenyellow;
+  font-weight: bold;
+}
+
+.copyright-note a img:hover {
+  transform: scale(1.2);
+}
+
+.footer a {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+    padding: 5rem 0.5rem;
+  }
+
+  .footer h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer a {
+    font-size: 0.8rem;
+  }
+  .footer p {
+    font-size: 0.8rem;
+  }
+  .copyright-note {
+    font-size: 0.8rem;
+  }
+
+  .social-media-div,
+  .useful-links,
+  .footer-contact-us,
+  .karigor-sponsors {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .location-address p,
+  .location-address1 p,
+  .telephone-number,
+  .email-address {
+    font-size: 0.8rem;
+  }
+  .location-address,
+  .location-address1 {
+    margin-left: 0.3rem;
+  }
+  .Tel_email {
+    margin-left: 1rem;
+  }
+  .footer-contact-us a img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .location-address1 {
+    margin-top: 2rem;
+  }
+  .location-address a img {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  .contact-footer_items {
+    margin-left: -0.2rem;
+  }
+}
