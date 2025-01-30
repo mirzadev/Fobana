@@ -14,12 +14,22 @@ const Carousel = () => {
   const settings = {
     dots: true, // Show navigation dots
     infinite: true, // Infinite looping
-    speed: 500, // Transition speed (in ms)
+    speed: 800, // Transition speed (in ms)
     slidesToShow: 1, // Show 1 slide at a time
     slidesToScroll: 1, // Scroll 1 slide at a time
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Auto-slide every 3 seconds
+    autoplaySpeed: 5000, // Auto-slide every 3 seconds
     pauseOnHover: true, // Pause autoplay when the user hovers over the carousel
+    prevArrow: (
+      <div className="slick-arrow slick-prev">
+        {/* <div>&lt;</div> Left arrow symbol */}
+      </div>
+    ),
+    nextArrow: (
+      <div className="slick-arrow slick-next">
+        {/* <span>&gt;</span> Right arrow symbol */}
+      </div>
+    ),
   };
 
   return (

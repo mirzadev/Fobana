@@ -31,7 +31,7 @@ export const MenuItems1 = [
 
   {
     title: "Talent Hunt",
-    url: "/membership",
+    url: "/talent",
     CName: "nav-links",
     icon: "fa-solid fa-calendar-days",
   },
@@ -63,7 +63,7 @@ export const MenuItems3 = [
   },
   {
     title: "Online Payment",
-    url: "/multimedia",
+    url: "/payment",
     CName: "nav-links",
     icon: "fa-solid fa-calendar-days",
   },
@@ -77,61 +77,61 @@ export const MenuItems3 = [
 
 export const EventDropDownMenu = [
   {
-    id: 1,
+    index: 0,
     title: "About FOBANA",
     url: "/aboutFobana",
     CName: "dropdown-links",
   },
   {
-    id: 2,
+    index: 1,
     title: "Executive Committee Members",
     url: "/execCommMem",
     CName: "dropdown-links",
   },
   {
-    id: 3,
+    index: 2,
     title: "Contact Us",
     url: "/contact",
     CName: "dropdown-links",
   },
   {
-    id: 4,
+    index: 3,
     title: "Constitution and Bylaws",
     url: "/constitution",
     CName: "dropdown-links",
   },
   {
-    id: 5,
+    index: 4,
     title: "FOBANA Documents",
     url: "/documents",
     CName: "dropdown-links",
   },
   {
-    id: 6,
+    index: 5,
     title: "Standing Committee",
     url: "/standingCommittee",
     CName: "dropdown-links",
   },
   {
-    id: 7,
+    index: 6,
     title: "Annual Report 2017-2018",
     url: "/annualReport",
     CName: "dropdown-links",
   },
   {
-    id: 8,
+    index: 7,
     title: "FOBANA Convention",
     url: "/execCommMem",
     CName: "dropdown-links",
   },
   {
-    id: 9,
+    index: 8,
     title: "Sponsors",
     url: "/annualReport",
     CName: "dropdown-links",
   },
   {
-    id: 10,
+    index: 9,
     title: "FAQ about FOBANA",
     url: "/faq",
     CName: "dropdown-links",
@@ -140,19 +140,19 @@ export const EventDropDownMenu = [
 
 export const EventDropDownMenu1 = [
   {
-    id: 1,
+    index: 0,
     title: "Membership Form/Details",
     url: "/membershipForm",
     CName: "dropdown-links",
   },
   {
-    id: 2,
+    index: 1,
     title: "Executive Membership Nomination",
     url: "/portraits2",
     CName: "dropdown-links",
   },
   {
-    id: 3,
+    index: 2,
     title: "Members Benefits",
     url: "/membersBenefit",
     CName: "dropdown-links",
@@ -161,13 +161,13 @@ export const EventDropDownMenu1 = [
 
 export const EventDropDownMenu2 = [
   {
-    id: 1,
+    index: 0,
     title: "FOBANA 2021",
     url: "/fobana2021",
     CName: "dropdown-links",
   },
   {
-    id: 2,
+    index: 1,
     title: "FOBANA 2017",
     url: "/fobana2017",
     CName: "dropdown-links",
@@ -176,37 +176,37 @@ export const EventDropDownMenu2 = [
 
 export const EventDropDownMenu3 = [
   {
-    id: 1,
+    index: 0,
     title: "Photo Gallery",
     url: "/photoGallery",
     CName: "dropdown-links",
   },
   {
-    id: 2,
+    index: 1,
     title: "Videos",
     url: "/videos",
     CName: "dropdown-links",
   },
   {
-    id: 3,
+    index: 2,
     title: "Publications",
     url: "/publications",
     CName: "dropdown-links",
   },
   {
-    id: 4,
+    index: 3,
     title: "News Links",
     url: "/newsLinks",
     CName: "dropdown-links",
   },
   {
-    id: 5,
+    index: 4,
     title: "Bangladeshi Scholars in NA",
     url: "/bdScholars",
     CName: "dropdown-links",
   },
   {
-    id: 6,
+    index: 5,
     title: "Bangladeshi Artists in NA",
     url: "/bdArtist",
     CName: "dropdown-links",

@@ -5,8 +5,8 @@
   list-style: none;
   text-align: start;
   padding: 1rem 0.1rem;
-  background: rgb(179, 190, 199, 0.5);
-  border: solid rgb(165, 173, 179);
+  background: rgb(179, 190, 199);
+  border: solid #e8e6e6;
   border-radius: 0.2rem;
 }
 
@@ -56,6 +56,11 @@
   color: white;
   padding: 3rem;
   display: block;
+}
+.dropdown-divider {
+  border: 0;
+  border-top: 1px solid #e8e6e6;
+  margin: 5px 0;
 }
 
 @media screen and (max-width: 850px) {
