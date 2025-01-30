@@ -14,15 +14,21 @@ function Dropdown2() {
       >
         {EventDropDownMenu2.map((item) => {
           return (
-            <li key={item.id}>
-              <Link
-                to={item.url}
-                className={item.CName}
-                onClick={() => setDropdown(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
+            <React.Fragment key={item.id}>
+              <li key={item.id}>
+                <Link
+                  to={item.url}
+                  className={item.CName}
+                  onClick={() => setDropdown(false)}
+                >
+                  {item.title}
+                </Link>
+              </li>
+              {/* Add a divider after a certain item (e.g., after the 3rd item) */}
+              {item.index < EventDropDownMenu2.length - 1 && (
+                <hr className="dropdown-divider" />
+              )}
+            </React.Fragment>
           );
         })}
       </ul>

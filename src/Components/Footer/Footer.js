@@ -6,6 +6,7 @@ import Location from "../../Assets/footerItem/Location_Symbol.png";
 import Telephone from "../../Assets/footerItem/Telephone_Logo.png";
 import Email from "../../Assets/footerItem/Email_Logo.png";
 import pspTechLogo from "../../Assets/footerItem/pspTech-logo.png";
+import FobanaFooterLogo from "../../Assets/footerItem/Fobana_Footer_logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -44,19 +45,19 @@ const Footer = () => {
           <h4>Useful Links</h4>
           <div className="link-menues">
             <div className="link-menu-1">
+              <Link to="https://fobanami2024.com/">FOBANA 2024</Link>
               <Link to="/about">About Us</Link>
-              <Link to="/portfolio">Portfolio</Link>
-              <Link to="/work">Work</Link>
+              <Link to="/membership">Membership</Link>
             </div>
             <div className="link-menu-2">
-              <Link to="/commercial">Commercial</Link>
-              <Link to="/wedding">Wedding</Link>
-              <Link to="/boishakh">Real Estate</Link>
+              <Link to="/talent">Talent Hunt</Link>
+              <Link to="/convention">Convention</Link>
+              <Link to="/scholarship">Scholarship</Link>
             </div>
             <div className="link-menu-3">
-              <Link to="/ekCupCha">Product</Link>
-              <Link to="/kpCulture">Food</Link>
-              <Link to="/book">Book Us</Link>
+              <Link to="/multimedia">Multimedia</Link>
+              <Link to="/payment">Online Payment</Link>
+              <Link to="/contact">Contact Us</Link>
             </div>
           </div>
         </div>
@@ -77,8 +78,8 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <div className="loc_address_cont">
-                  <p className="location-address">512 Shady Pine Way, #B1</p>
-                  <p className="location-address1">Greenacres, FL-33415</p>
+                  <p className="location-address">4299 West Hillsboro Blvd</p>
+                  <p className="location-address1">Coconut Creek, FL - 33073</p>
                 </div>
               </Link>
             </div>
@@ -88,7 +89,7 @@ const Footer = () => {
                   <img src={Telephone} alt="telephone" height="30" width="30" />
                 </Link>
                 <a>
-                  <p className="telephone-number">1(561) 418 9672 (Cell)</p>
+                  <p className="telephone-number">1(954) 818 2970 (Cell)</p>
                 </a>
               </div>
               <div className="email">
@@ -100,11 +101,11 @@ const Footer = () => {
                   <img src={Email} alt="email" height="30" width="30" />
                 </Link>
                 <Link
-                  to="mailto:qazirabbani@gmail.com"
+                  to="mailto:fobanac@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p className="email-address">qazirabbani@gmail.com</p>
+                  <p className="email-address">fobanac@gmail.com</p>
                 </Link>
               </div>
             </div>
@@ -112,15 +113,22 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-
-      <div className="copyright-note">
-        <p>Copyright @</p>
-        <Link to="https://psptech.net/" target="_blank" rel="noreferrer">
-          <img src={pspTechLogo} alt="psptech" height="35" width="35" />
-        </Link>
-        <Link to="https://psptech.net/" target="_blank" rel="noreferrer">
-          <p>PSP Technology Inc</p>
-        </Link>
+      <div className="footer-copyright">
+        <div>
+          <img src={FobanaFooterLogo} alt="psptech" height="100" width="200" />
+        </div>
+        <div>
+          <p>Copyright @ 2025 FOBANA Central</p>
+        </div>
+        <div className="copyright-note">
+          <p>Tech Support:</p>
+          <Link to="https://psptech.net/" target="_blank" rel="noreferrer">
+            <img src={pspTechLogo} alt="psptech" height="35" width="35" />
+          </Link>
+          <Link to="https://psptech.net/" target="_blank" rel="noreferrer">
+            <p>PSP Technology Inc</p>
+          </Link>
+        </div>
       </div>
     </div>
   );

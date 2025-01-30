@@ -1,5 +1,24 @@
 .carousel-container {
-  margin: 4rem 2rem;
+  margin: 3rem 4rem;
+  margin-top: 6rem;
+}
+
+.slick-arrow {
+  font-size: 30px;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
 }
 
 @media screen and (max-width: 850px) {

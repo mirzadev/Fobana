@@ -145,6 +145,13 @@
   color: #fafafa;
   margin-left: 1rem;
 }
+.copyright-note p {
+  margin-bottom: 3rem;
+}
+.copyright-note p:hover {
+  color: greenyellow;
+  font-weight: bold;
+}
 
 .copyright-note a:hover {
   color: greenyellow;
@@ -154,9 +161,25 @@
 .copyright-note a img:hover {
   transform: scale(1.2);
 }
+.copyright-note a img {
+  margin-top: 0.4rem;
+}
 
 .footer a {
   font-size: 0.9rem;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 15rem;
+}
+.footer-copyright p:hover {
+  color: greenyellow;
+  font-weight: bold;
+}
+.footer-copyright img:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 850px) {
