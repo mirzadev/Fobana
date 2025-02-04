@@ -1,6 +1,6 @@
 import Navbar from "../Components/NavbarItems/Navbar";
 import HomeItems from "../Components/HomePage/HomeItems";
-// import FeaturedAlbum from "../Component/HomeFeature/FeaturedAlbum";
+import YouthGallery from "../Components/Youth-Forum/YouthPage";
 // import Footer from "../Component/Footer/Footer";
 import Carousel from "../Components/Carousel/CarouselFunc";
 import ExecComCarousel from "../Components/ExComCarousel/ExComCarouselFunc";
@@ -17,6 +17,7 @@ function Home() {
       <ExecComCarousel />
       <StngComCarousel />
       <Advertisement />
+      <YouthGallery />
       <Footer />
       {/* <FeaturedAlbum />
       <Footer /> */}

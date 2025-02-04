@@ -49,6 +49,15 @@ const StngComCarousel = () => {
         {/* <span>&gt;</span> Right arrow symbol */}
       </div>
     ),
+    responsive: [
+      {
+        breakpoint: 1024, // iPhone screens
+        settings: {
+          slidesToShow: 1, // Show only 1 slide at a time on smaller screens
+          autoplaySpeed: 3000, // Speed up autoplay for better experience on mobile
+        },
+      },
+    ],
   };
 
   // List of images and titles

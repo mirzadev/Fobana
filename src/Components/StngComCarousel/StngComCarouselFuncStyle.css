@@ -1,35 +1,27 @@
-/*
-.carousel-container {
-  margin: 3rem 4rem;
-  margin-top: 6rem;
-}
-*/
-/* ExComCarouselFuncStyle.css */
-
+/* Default (Desktop/Regular Computer) */
 .stng-carousel-container {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  /* margin-top: 6rem; */
+  padding: 0.1rem 4rem;
   position: relative;
-  width: auto;
+  width: 95%;
 }
+
 #stng-com-title {
   font-family: "Gill Sans MT";
-  /* font-style: italic; */
-  /* font-weight: bold; */
   font-size: 2rem;
 }
+
 .stng-carousel-item {
   text-align: center;
   position: relative;
   padding-right: -2rem;
 }
+
 .stng-carousel-item img {
   height: auto;
 }
+
 .stng-appt-title {
   margin-top: 10px;
-  /* font-weight: bold; */
   color: #333;
   font-family: sans-serif;
   font-size: 1.3rem;
@@ -53,7 +45,6 @@
   right: 2.2rem;
 }
 
-/* Optional: style the arrows when hovered */
 .slick-arrow:hover {
   color: #007bff;
 }
@@ -67,8 +58,86 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* @media screen and (max-width: 850px) {
-  .carousel-container {
-    margin: 1rem 0.1rem;
+/* Laptop View (Max-width: 1024px) */
+@media (max-width: 1024px) {
+  .stng-carousel-container {
+    padding: 0.1rem 2rem;
+    width: 100%;
   }
-} */
+
+  #stng-com-title {
+    font-size: 1.8rem; /* Smaller font size on laptops */
+  }
+
+  .stng-appt-title {
+    font-size: 1.5rem; /* Adjust image title font size */
+  }
+
+  .slick-arrow {
+    font-size: 25px; /* Reduce arrow size */
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 1.5rem;
+  }
+}
+
+/* iPhone View (Max-width: 850px) */
+@media (max-width: 850px) {
+  .stng-carousel-container {
+    padding: 0.1rem 2rem;
+    width: 100%;
+  }
+
+  #stng-com-title {
+    font-size: 1.5rem; /* Smaller font size on mobile */
+  }
+
+  .stng-appt-title {
+    font-size: 1.5rem; /* Smaller font size for image titles */
+  }
+
+  .slick-arrow {
+    font-size: 20px; /* Smaller arrows on mobile */
+  }
+
+  .slick-prev {
+    left: 5px;
+  }
+
+  .slick-next {
+    right: 3rem;
+  }
+}
+
+/* iPhone SE or Very Small Devices (Max-width: 480px) */
+@media (max-width: 480px) {
+  .stng-carousel-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #stng-com-title {
+    font-size: 1.2rem; /* Even smaller title for very small devices */
+  }
+
+  .stng-appt-title {
+    font-size: 1rem; /* Smaller image titles for very small screens */
+  }
+
+  .slick-arrow {
+    font-size: 18px; /* Even smaller arrows */
+  }
+
+  .slick-prev {
+    left: 5px;
+  }
+
+  .slick-next {
+    right: 0.5rem;
+  }
+}

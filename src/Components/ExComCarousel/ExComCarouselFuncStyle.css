@@ -1,32 +1,25 @@
-/*
-.carousel-container {
-  margin: 3rem 4rem;
-  margin-top: 6rem;
-}
-*/
-/* ExComCarouselFuncStyle.css */
-
 .exec-carousel-container {
-  padding: 3rem;
-  /* margin-top: 6rem; */
+  padding: 2rem 4rem;
   position: relative;
-  width: auto;
+  width: 95%;
 }
 #exec-com-title {
   font-family: "Gill Sans MT";
-  /* font-style: italic; */
   font-weight: bold;
   font-size: 2rem;
 }
 .carousel-item {
   text-align: center;
   position: relative;
-  padding-right: -2rem;
+  /* padding-right: -2rem; */
+}
+.carousel-item img {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .image-title {
   margin-top: 10px;
-  /* font-weight: bold; */
   color: #333;
   font-family: sans-serif;
   font-size: 1.3rem;
@@ -61,8 +54,89 @@
   font-size: 40px;
 }
 
-/* @media screen and (max-width: 850px) {
-  .carousel-container {
-    margin: 1rem 0.1rem;
+/* Laptop View (Max-width: 1024px) */
+@media (max-width: 1024px) {
+  .exec-carousel-container {
+    padding: 2rem; /* Slightly reduce padding on laptops */
   }
-} */
+
+  #exec-com-title {
+    font-size: 1.8rem; /* Reduce font size of title on laptops */
+  }
+
+  .image-title {
+    font-size: 1.5rem; /* Adjust font size of image titles */
+  }
+
+  .slick-arrow {
+    font-size: 25px; /* Make arrows smaller on laptops */
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 1.5rem;
+  }
+}
+
+/* iPhone View (Max-width: 850px) */
+@media (max-width: 850px) {
+  .exec-carousel-container {
+    padding: 1.5rem;
+    width: 100%; /* Make sure the container takes the full width */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  #exec-com-title {
+    font-size: 1.5rem; /* Make title smaller for mobile */
+  }
+
+  .image-title {
+    font-size: 1.5rem; /* Make image title smaller for mobile */
+  }
+
+  .slick-arrow {
+    font-size: 20px; /* Make arrows smaller on mobile */
+  }
+
+  .slick-prev {
+    left: 5px; /* Move prev arrow closer */
+  }
+
+  .slick-next {
+    right: 1rem; /* Move next arrow closer */
+  }
+}
+
+/* iPhone SE or Very Small Devices (Max-width: 480px) */
+@media (max-width: 480px) {
+  .exec-carousel-container {
+    padding: 1rem; /* Reduce padding even further on very small screens */
+  }
+
+  #exec-com-title {
+    font-size: 1.2rem; /* Further reduce title font size */
+  }
+
+  .image-title {
+    font-size: 1rem; /* Further reduce image title font size */
+  }
+
+  .slick-arrow {
+    font-size: 18px; /* Make arrows smaller for very small screens */
+  }
+
+  .slick-prev {
+    left: 5px; /* Keep arrows closer to the edge */
+  }
+
+  .slick-next {
+    right: 0.5rem; /* Adjust right position for small devices */
+  }
+}

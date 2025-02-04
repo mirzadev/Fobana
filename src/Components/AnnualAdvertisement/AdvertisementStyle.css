@@ -1,9 +1,106 @@
+/* Default (Regular Computer/Desktop) */
 .elementor-widget-container {
-  padding: 4rem 3rem;
+  display: flex;
+  justify-content: center; /* Center the flyer image */
+  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
-.SnsHomeLogo {
-  padding: 3rem 15rem;
-
+.elementor-widget-container img {
+  width: 100%;
+  max-width: 850px; /* Max width for flyer image on large screens */
   height: auto;
+}
+
+.SnsHomeLogo-container {
+  display: flex;
+  justify-content: center; /* Center the logo image */
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.SnsHomeLogo-container img {
+  width: 100%; /* Make the logo responsive */
+  max-width: 500px; /* Set a max width for the logo */
+  height: auto;
+}
+
+/* Laptop View (Max-width: 1024px) */
+@media (max-width: 1024px) {
+  .elementor-widget-container {
+    justify-content: center; /* Keep flyer centered on laptops */
+    margin-bottom: 1.5rem;
+  }
+
+  .elementor-widget-container img {
+    width: 90%; /* Adjust flyer size for smaller screens */
+    max-width: 500px; /* Adjust the max width for laptop */
+  }
+
+  .SnsHomeLogo-container {
+    width: 100%; /* Ensure the container takes up the full width */
+    height: auto; /* Adjust height automatically based on image aspect ratio */
+    display: flex; /* Use flexbox to center the content if needed */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+
+  .SnsHomeLogo-container img {
+    width: 100%; /* Ensure the image fills the container's width */
+    height: auto; /* Maintain aspect ratio of the image */
+    object-fit: contain; /* Make sure the image is contained within the container */
+    max-width: 100%; /* Prevent image from stretching beyond the container */
+    max-height: 100%; /* Prevent image from stretching beyond the container */
+  }
+}
+
+/* iPhone View (Max-width: 850px) */
+@media (max-width: 850px) {
+  .elementor-widget-container {
+    justify-content: center; /* Keep flyer centered */
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .elementor-widget-container img {
+    width: 100%; /* Adjust flyer width */
+    max-width: 400px; /* Reduce max width for flyer */
+  }
+
+  .SnsHomeLogo-container {
+    display: flex;
+    justify-content: center; /* Center the logo image */
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .SnsHomeLogo-container img {
+    width: 80%; /* Make the logo responsive */
+    max-width: 400px; /* Set a max width for the logo */
+    height: auto;
+  }
+}
+
+/* iPhone SE or Very Small Devices (Max-width: 480px) */
+@media (max-width: 480px) {
+  .elementor-widget-container {
+    justify-content: center; /* Keep flyer centered */
+    margin-bottom: 0.5rem;
+  }
+
+  .elementor-widget-container img {
+    width: 100%; /* Full width for flyer on small screens */
+    max-width: 300px; /* Ensure the flyer doesn't exceed screen size */
+  }
+
+  .SnsHomeLogo-container {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .SnsHomeLogo-container img {
+    width: 70%; /* Make the logo responsive */
+    max-width: 300px; /* Set a max width for the logo */
+    height: auto;
+  }
 }

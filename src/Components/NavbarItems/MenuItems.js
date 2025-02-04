@@ -9,13 +9,13 @@ export const MenuItems = [
     title: "FOBANA 2024",
     url: "https://fobanami2024.com/",
     CName: "nav-links",
-    icon: "fa-solid fa-house-user",
+    // icon: "fa-solid fa-house-user",
   },
   {
     title: "About Us",
     url: "/about",
     CName: "nav-links",
-    icon: "fa-sharp fa-solid fa-image",
+    icon: "fa-regular fa-address-card",
     ddIcon: "fas fa-caret-down",
   },
 ];
@@ -25,7 +25,7 @@ export const MenuItems1 = [
     title: "Membership",
     url: "/membership",
     CName: "nav-links",
-    icon: "fa-sharp fa-solid fa-image",
+    icon: "fa-solid fa-user-group",
     ddIcon: "fas fa-caret-down",
   },
 
@@ -33,7 +33,7 @@ export const MenuItems1 = [
     title: "Talent Hunt",
     url: "/talent",
     CName: "nav-links",
-    icon: "fa-solid fa-calendar-days",
+    icon: "fa-solid fa-child",
   },
 ];
 
@@ -42,14 +42,14 @@ export const MenuItems2 = [
     title: "Convention",
     url: "/convention",
     CName: "nav-links",
-    icon: "fa-sharp fa-solid fa-image",
+    icon: "fa-regular fa-handshake",
     ddIcon: "fas fa-caret-down",
   },
   {
     title: "Scholarship",
     url: "/scholarship",
     CName: "nav-links",
-    icon: "fa-solid fa-calendar-days",
+    icon: "fa-solid fa-graduation-cap",
   },
 ];
 
@@ -58,14 +58,14 @@ export const MenuItems3 = [
     title: "Multimedia",
     url: "/multimedia",
     CName: "nav-links",
-    icon: "fa-sharp fa-solid fa-image",
+    icon: "fa-regular fa-file",
     ddIcon: "fas fa-caret-down",
   },
   {
     title: "Online Payment",
     url: "/payment",
     CName: "nav-links",
-    icon: "fa-solid fa-calendar-days",
+    icon: "fa-solid fa-wifi",
   },
   {
     title: "Contact Us",
