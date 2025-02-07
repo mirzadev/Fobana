@@ -7,7 +7,9 @@ import ExecComCarousel from "../Components/ExComCarousel/ExComCarouselFunc";
 import StngComCarousel from "../Components/StngComCarousel/StngComCarouselFunc";
 import Footer from "../Components/Footer/Footer";
 import Advertisement from "../Components/AnnualAdvertisement/Advertisement";
-
+import MediaPatCarousel from "../Components/MediaPartners/MedPatCarouselFunc";
+import SponsorsCarousel from "../Components/Sponsors/SponsorsCarouselFunc";
+import MediaFriendsCarousel from "../Components/MediaFriends/MedFrdCarouselFunc";
 function Home() {
   return (
     <>
@@ -18,6 +20,9 @@ function Home() {
       <StngComCarousel />
       <Advertisement />
       <YouthGallery />
+      <MediaPatCarousel />
+      <SponsorsCarousel />
+      <MediaFriendsCarousel />
       <Footer />
       {/* <FeaturedAlbum />
       <Footer /> */}

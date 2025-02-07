@@ -1,0 +1,145 @@
+/* Default (Desktop/Regular Computer) */
+.medFrd-carousel-container {
+  padding: 0.1rem 4rem;
+  position: relative;
+  width: 92%;
+  margin-bottom: 2rem;
+}
+
+#medFrd-com-title {
+  font-family: "Gill Sans MT";
+  font-size: 2rem;
+}
+
+.medFrd-carousel-item {
+  text-align: center;
+  position: relative;
+  padding-right: -2rem;
+  margin: 0 10px; /* Space between items */
+}
+
+.medFrd-carousel-item img {
+  height: auto;
+}
+
+.medFrd-appt-title {
+  margin-top: 10px;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
+
+.slick-arrow {
+  font-size: 30px;
+  color: #000;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 2.2rem;
+}
+
+.slick-arrow:hover {
+  color: #007bff;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 40px;
+  color: rgb(211, 217, 223);
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Laptop View (Max-width: 1024px) */
+@media (max-width: 1024px) {
+  .medFrd-carousel-container {
+    padding: 0.1rem 2rem;
+    width: 100%;
+  }
+
+  #medFrd-com-title {
+    font-size: 1.8rem; /* Smaller font size on laptops */
+  }
+
+  .medFrd-appt-title {
+    font-size: 1.5rem; /* Adjust image title font size */
+  }
+
+  .slick-arrow {
+    font-size: 25px; /* Reduce arrow size */
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 1.5rem;
+  }
+}
+
+/* iPhone View (Max-width: 850px) */
+@media (max-width: 850px) {
+  .medFrd-carousel-container {
+    padding: 0.1rem 2rem;
+    width: 100%;
+  }
+
+  #medFrd-com-title {
+    font-size: 1.5rem; /* Smaller font size on mobile */
+  }
+
+  .medFrd-appt-title {
+    font-size: 1.5rem; /* Smaller font size for image titles */
+  }
+
+  .slick-arrow {
+    font-size: 20px; /* Smaller arrows on mobile */
+  }
+
+  .slick-prev {
+    left: 5px;
+  }
+
+  .slick-next {
+    right: 3rem;
+  }
+}
+
+/* iPhone SE or Very Small Devices (Max-width: 480px) */
+@media (max-width: 480px) {
+  .medFrd-carousel-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #medFrd-com-title {
+    font-size: 1.2rem; /* Even smaller title for very small devices */
+  }
+
+  .medFrd-appt-title {
+    font-size: 1rem; /* Smaller image titles for very small screens */
+  }
+
+  .slick-arrow {
+    font-size: 18px; /* Even smaller arrows */
+  }
+
+  .slick-prev {
+    left: 5px;
+  }
+
+  .slick-next {
+    right: 0.5rem;
+  }
+}
