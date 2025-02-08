@@ -10,7 +10,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
   width: 98%;
   height: 80px;
-  background: rgb(231, 233, 235, 0.8);
+  background: rgba(47, 132, 218, 0.8);
   border-radius: 13px;
   position: fixed;
   top: 15px;
@@ -28,13 +28,14 @@ body {
   grid-template-columns: repeat(10, auto);
   grid-gap: 1px;
   list-style: none;
+  margin-left: -2rem;
   align-items: center;
 }
 
 .nav-links {
   text-decoration: none;
   font-family: Tahoma, sans-serif;
-  color: navy;
+  color: whitesmoke;
   font-size: 1rem;
   font-weight: 600;
   padding: 1.2rem 0.5rem;
@@ -61,8 +62,8 @@ body {
 
 #Fobana_logo {
   padding-top: 0.6rem;
-  height: 4rem;
-  width: 5.5rem;
+  height: 4.5rem;
+  width: 6rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -77,15 +78,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: rgb(235, 246, 239);
+    background: whitesmoke;
     width: 100%;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 3rem;
     left: -100%;
     opacity: 1;
     align-items: stretch;
-    padding: 80px 0 30px 0;
+    padding: 1px 0 30px 0;
     margin: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
@@ -100,7 +101,7 @@ body {
     display: block;
     width: 100%;
     font-size: 1rem;
-    padding: 1.4rem 0;
+    padding: 0.8rem 0;
     color: navy;
   }
   .nav-links:hover {
@@ -119,8 +120,8 @@ body {
     width: 50%;
     background: rgb(89, 149, 233);
     font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
   .nav-link-mobile:hover {
     background: rgb(187, 196, 209);
@@ -134,13 +135,14 @@ body {
   }
   .menu-icons i {
     font-size: 1.2rem;
-    color: navy;
+    color: whitesmoke;
+    margin-right: 1rem;
   }
 
-  #Fobana-logo {
-    padding-top: 0.5rem;
-    height: 3.5rem;
-    width: 4.5rem;
-    margin-left: -0.6rem;
+  #Fobana_logo {
+    padding-top: 0.1rem;
+    height: 2.2rem;
+    width: 3.2rem;
+    margin-left: 1rem;
   }
 }

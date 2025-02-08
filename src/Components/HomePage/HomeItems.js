@@ -1,12 +1,16 @@
 import React from "react";
 import "./HomeStyle.css";
+import Fobana_Logo from "../../Assets/Cover/Fobana_Logo.png";
 
 function HomeItems() {
   return (
     <section className="my-5" id="home_section">
       <div>
+        <div className="Fobana_logo">
+          <img id="AD-logo" src={Fobana_Logo}></img>
+        </div>
         <h1 id="featured_Album">
-          FOBANA: FEDERATION OF BANGLADESHI ORGANIZATIONS IN NORTH AMERICA
+          FEDERATION OF BANGLADESHI ORGANIZATIONS IN NORTH AMERICA
         </h1>
       </div>
       <div className="home_intro">
