@@ -8,16 +8,20 @@
   font-family: "Lucida Sans";
   font-weight: bold;
 }
-
+.WelcomeFobanaHeading {
+  text-align: left;
+  font-size: 1.5rem;
+}
 .members-heading-subTitle {
   font-size: 1.2rem;
   font-family: "Gill Sans MT";
   padding-bottom: 0.3rem;
   font-style: italic;
+  margin-top: -1.5rem;
 }
 
 .aboutUs-description {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Lucida Sans";
   padding-bottom: 0.3rem;
   text-align: justify;
@@ -108,47 +112,6 @@
   margin-top: 4rem;
 }
 
-.Official_Contact {
-  font-family: "Lucida Sans";
-  font-size: 1.2rem;
-  margin-top: 4rem;
-}
-
-.ContactInfo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-}
-.office-loc {
-  margin-right: 3rem;
-}
-.office-loc a:hover,
-.email-contact a:hover {
-  color: blueviolet;
-}
-.office-loc a,
-.email-contact a {
-  color: black;
-  text-decoration: none;
-}
-.tel-contact {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-.phoneNumber:hover {
-  color: blueviolet;
-}
-.email-contact {
-  margin-left: 3rem;
-}
-.office-loc-logo {
-  height: 5rem;
-  width: 5rem;
-}
-.ContactInfo h2 {
-  margin-top: 0.75rem;
-}
 .map-location {
   padding-left: 6rem;
   padding-right: 6rem;

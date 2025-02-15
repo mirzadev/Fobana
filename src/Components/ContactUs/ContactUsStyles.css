@@ -1,0 +1,138 @@
+.contact-us-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 7rem 4rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form div {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.status-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.Official_Contact {
+  font-family: "Lucida Sans";
+  font-size: 1.2rem;
+  margin-top: 4rem;
+}
+
+.ContactInfo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.office-loc {
+  margin-right: 1rem;
+}
+.office-loc a:hover,
+.email-contact a:hover {
+  color: blueviolet;
+}
+.office-loc a,
+.email-contact a {
+  color: black;
+  text-decoration: none;
+}
+.tel-contact {
+  margin-left: 1;
+  margin-right: 1rem;
+}
+.phoneNumber:hover {
+  color: blueviolet;
+}
+.email-contact {
+  margin-left: 1rem;
+}
+.office-loc-logo {
+  height: 5rem;
+  width: 5rem;
+}
+.ContactInfo h2 {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .contact-us-container {
+    padding: 15px; /* Reduce padding on small screens */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+  }
+
+  button {
+    width: 100%; /* Make button full width */
+    padding: 12px; /* Increase padding for easier tapping */
+  }
+
+  .status-message {
+    font-size: 14px; /* Slightly smaller font for status message */
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-us-container {
+    padding: 10px; /* Further reduce padding for very small screens */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 6px; /* Adjust padding for very small screens */
+  }
+
+  button {
+    padding: 10px; /* Make button more compact for small devices */
+  }
+
+  .status-message {
+    font-size: 12px; /* Make status message smaller */
+  }
+}
