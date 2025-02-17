@@ -1,13 +1,7 @@
 import React from "react";
-import "./AboutUsStyles.css";
-
-import MapComponent from "./MapLocation";
-
-// import President_AD from "../../Assets/About/AnamikaChowdhury.jpg";
-// import VP_AD from "../../Assets/About/AnamikaChowdhury.jpg";
-
-import { Link } from "react-router-dom";
-function AboutUs() {
+import "./AboutFobanaStyles.css";
+// import { Link } from "react-router-dom";
+function AboutFobana() {
   return (
     <div className="about-container">
       <h1>ABOUT FOBANA</h1>
@@ -42,17 +36,8 @@ function AboutUs() {
         Please join us if you haven’t already done so and encourage other
         organizations to join FOBANA too!
       </p>
-
-      <div className="Official_Contact">
-        <div className="life_at_AD">
-          <h1>ON YOUR MAP</h1>
-        </div>
-        <div className="map-location">
-          <MapComponent />
-        </div>
-      </div>
     </div>
   );
 }
 
-export default AboutUs;
+export default AboutFobana;

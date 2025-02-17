@@ -1,19 +1,21 @@
 import Navbar from "../Components/NavbarItems/Navbar";
-import AboutUs from "../Components/About/AboutUs";
 import Footer from "../Components/Footer/Footer";
-import ExecComAbout from "../Components/About/ExecCom/ExComAbout";
+import About from "../Components/AboutMain/About";
+// import AboutFobana from "../Components/AboutFobana/AboutFobana";
+// import ExecComAbout from "../Components/AboutExecCom/ExComAbout";
+// import ContactUs from "../Components/ContactUs/ContactUs";
 
-function About() {
+function AboutUs() {
   return (
     <>
       <Navbar />
-      <AboutUs />
+      <About />
+      {/* <AboutFobana />
       <ExecComAbout />
+      <ContactUs /> */}
       <Footer />
-      {/* <FeaturedAlbum />
-      <Footer /> */}
     </>
   );
 }
 
-export default About;
+export default AboutUs;

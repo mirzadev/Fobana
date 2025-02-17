@@ -1,15 +1,15 @@
 import Navbar from "../Components/NavbarItems/Navbar";
 import Footer from "../Components/Footer/Footer";
-import ContactUs from "../Components/ContactUs/ContactUs";
+import ExecComAbout from "../Components/AboutExecCom/ExComAbout";
 
-function Contact() {
+function FobanaAbout() {
   return (
     <>
       <Navbar />
-      <ContactUs />
+      <ExecComAbout />
       <Footer />
     </>
   );
 }
 
-export default Contact;
+export default FobanaAbout;
