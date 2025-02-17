@@ -1,0 +1,70 @@
+.about-container {
+  margin: 7rem 8rem;
+
+  color: black;
+}
+
+.about-container h1 {
+  font-size: 2.65rem;
+  font-family: "Lucida Sans";
+  font-weight: bold;
+}
+.WelcomeFobanaHeading {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.members-heading-subTitle {
+  font-size: 1.2rem;
+  font-family: "Gill Sans MT";
+  padding-bottom: 0.3rem;
+  font-style: italic;
+  margin-top: -1.5rem;
+}
+
+.aboutUs-description {
+  font-size: 1.2rem;
+  font-family: "Lucida Sans";
+  padding-bottom: 0.3rem;
+  text-align: justify;
+}
+.about-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lucida Sans";
+  padding-bottom: 0.3rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+}
+
+#social-instagram {
+  margin-left: 1.5rem;
+}
+
+#social-twiter {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .about-container {
+    margin: 4rem 4rem;
+  }
+
+  .about-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.3rem;
+  }
+  .about-container p {
+    font-size: 1rem;
+  }
+}

@@ -1,7 +1,6 @@
 .contact-us-container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 7rem 4rem;
   background-color: #f9f9f9;
   border-radius: 8px;
 }
@@ -59,7 +58,6 @@ button:hover {
 .Official_Contact {
   font-family: "Lucida Sans";
   font-size: 1.2rem;
-  margin-top: 4rem;
 }
 
 .ContactInfo {
@@ -97,6 +95,18 @@ button:hover {
 .ContactInfo h2 {
   margin-top: 0.75rem;
 }
+.map-location {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-bottom: -10rem;
+}
+.contactUs_header {
+  padding: 1rem 4rem;
+  margin-top: 5rem;
+}
+.map_header {
+  margin-top: 2rem;
+}
 
 @media (max-width: 600px) {
   .contact-us-container {
@@ -116,6 +126,22 @@ button:hover {
   .status-message {
     font-size: 14px; /* Slightly smaller font for status message */
   }
+  .map-location {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    position: relative;
+    top: 0;
+    z-index: 1; /* Ensure that map location stays below navbar */
+  }
+
+  /* Ensure the navbar stays on top */
+  .navbar {
+    position: fixed; /* Fixed navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* High z-index to keep the navbar above everything else */
+  }
 }
 
 @media (max-width: 400px) {
@@ -134,5 +160,10 @@ button:hover {
 
   .status-message {
     font-size: 12px; /* Make status message smaller */
+  }
+  /* Ensure map scrolls naturally under navbar */
+  .map-location {
+    top: 0; /* Make sure map stays in its normal position without additional margins */
+    margin-bottom: 1rem;
   }
 }
