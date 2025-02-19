@@ -65,6 +65,7 @@
 
 @media screen and (max-width: 850px) {
   .activity-submenu {
+    margin-top: 0.2rem;
     width: 13rem;
     padding: 0.5rem 0.3rem;
     background: rgb(67, 141, 238);

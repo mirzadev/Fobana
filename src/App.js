@@ -8,6 +8,7 @@ import Navbar from "./Components/NavbarItems/Navbar";
 import Contact from "./Routes/ContactUs";
 import FobanaAbout from "./Routes/FobanaAbout";
 import AboutExecCom from "./Routes/AboutExecCom";
+import ConstBylaws from "./Routes/ConstBylaws";
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
 
         <Route path="/contact" element={<Contact />} />
         <Route path="/execCommMem" element={<AboutExecCom />} />
-        {/* <Route path="/commercial" element={<Commercial />} />
-        <Route path="/weddings" element={<Wedding />} />
+        <Route path="/constitution" element={<ConstBylaws />} />
+        {/*<Route path="/weddings" element={<Wedding />} />
         <Route path="/realestate" element={<RealEstate />} /> */}
       </Routes>
     </div>
