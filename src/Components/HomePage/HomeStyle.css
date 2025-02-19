@@ -49,13 +49,76 @@
 
 @media screen and (max-width: 850px) {
   .home_intro {
-    margin: 1rem 0.1rem;
-    color: black;
+    margin: 1rem 0.5rem;
   }
   .home_intro h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .home_intro p {
     font-size: 1rem;
+  }
+
+  #home_section h1 {
+    font-size: 1.6rem;
+  }
+
+  #featured_Album {
+    font-size: 1.8rem;
+  }
+
+  .carousel-img-display {
+    width: 90%; /* Adjust image size on small screens */
+  }
+
+  .Fobana_logo img {
+    width: 12rem; /* Reduce logo size on small screens */
+  }
+
+  .homePg_title {
+    flex-direction: column; /* Stack logo and text vertically on smaller screens */
+    text-align: center;
+  }
+
+  .home_logo {
+    margin-right: 0;
+    margin-bottom: 1rem; /* Space out logo and title */
+  }
+
+  .home_beng_title {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home_intro {
+    margin: 1rem 0.3rem;
+  }
+
+  .home_intro h1 {
+    font-size: 1.3rem;
+  }
+
+  .home_intro p {
+    font-size: 0.9rem;
+  }
+
+  #home_section h1 {
+    font-size: 1.4rem;
+  }
+
+  #featured_Album {
+    font-size: 1.6rem;
+  }
+
+  .carousel-img-display {
+    width: 100%; /* Full width images on very small screens */
+  }
+
+  .Fobana_logo img {
+    width: 9rem; /* Further reduce logo size */
+  }
+
+  .homePg_title {
+    font-size: 1rem; /* Adjust title size on small screens */
   }
 }

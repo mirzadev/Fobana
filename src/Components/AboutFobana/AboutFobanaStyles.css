@@ -1,6 +1,5 @@
 .about-container {
   margin: 7rem 8rem;
-
   color: black;
 }
 
@@ -9,10 +8,12 @@
   font-family: "Lucida Sans";
   font-weight: bold;
 }
+
 .WelcomeFobanaHeading {
   text-align: left;
   font-size: 1.5rem;
 }
+
 .members-heading-subTitle {
   font-size: 1.2rem;
   font-family: "Gill Sans MT";
@@ -27,6 +28,7 @@
   padding-bottom: 0.3rem;
   text-align: justify;
 }
+
 .about-container h2 {
   text-align: center;
   font-size: 2rem;
@@ -52,19 +54,80 @@
   margin-right: 1.5rem;
 }
 
+/* Media Queries for Smaller Screens */
 @media screen and (max-width: 850px) {
   .about-container {
-    margin: 4rem 4rem;
+    margin: 4rem 2rem; /* Adjusted margins for smaller screens */
   }
 
   .about-container h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Reduced font size for better readability */
   }
 
   .about-container h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem; /* Reduced subtitle size */
   }
-  .about-container p {
-    font-size: 1rem;
+
+  .about-container p,
+  .aboutUs-description {
+    font-size: 1rem; /* Reduced paragraph size */
+  }
+
+  .WelcomeFobanaHeading {
+    text-align: center;
+    font-size: 1.3rem; /* Adjust heading size */
+  }
+
+  .members-heading-subTitle {
+    font-size: 1rem; /* Reduced subtitle size */
+    margin-top: 0rem; /* Adjusted margin */
+  }
+
+  .social-media {
+    flex-direction: column; /* Stack social icons vertically */
+    margin-top: 1rem;
+  }
+
+  .social-media a {
+    margin: 0.5rem 0; /* Spaced out social media links */
+  }
+
+  #social-instagram,
+  #social-twiter {
+    margin-left: 0; /* Removed horizontal margin for social icons */
+    margin-right: 0;
+  }
+}
+
+/* Additional adjustments for smaller screens under 600px */
+@media screen and (max-width: 600px) {
+  .about-container {
+    text-align: center;
+    margin: 3rem 1rem; /* Further reduced margins */
+  }
+
+  .about-container h1 {
+    font-size: 1.6rem; /* Further reduced font size */
+  }
+
+  .about-container h2 {
+    font-size: 1.4rem; /* Adjust subtitle size */
+  }
+
+  .WelcomeFobanaHeading {
+    font-size: 1.2rem; /* Reduced size for headings */
+  }
+
+  .members-heading-subTitle {
+    font-size: 0.9rem; /* Further reduced subtitle size */
+  }
+
+  .social-media {
+    flex-direction: row; /* Row direction for social icons on very small screens */
+    justify-content: center;
+  }
+
+  .social-media a {
+    margin: 0 0.5rem; /* Adjusted margins for social media links */
   }
 }
