@@ -33,7 +33,7 @@
   color: white;
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.7rem 0.1rem;
+  padding: 0.4rem 0.1rem;
   white-space: nowrap;
 }
 
@@ -67,7 +67,7 @@
   .activity-submenu {
     margin-top: 0.2rem;
     width: 13rem;
-    padding: 0.5rem 0.3rem;
+    padding: 0 0;
     background: rgb(67, 141, 238);
     border: solid rgb(67, 141, 238);
   }
@@ -75,17 +75,25 @@
   #activity-menu {
     text-decoration: none;
     color: navy;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 0.7rem 0.6rem;
+    padding: 0.1rem 0.1rem;
     white-space: nowrap;
+  }
+  .submenu-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 0;
   }
   .dropdown-links {
     text-decoration: none;
     color: whitesmoke;
     font-size: 0.7rem;
     font-weight: 600;
-    padding: 0.5rem 0.4rem;
+    padding: 0 0.1rem;
     white-space: nowrap;
     width: 100%;
     height: 100%;
@@ -94,5 +102,11 @@
     background: none;
     color: goldenrod;
     display: block;
+  }
+  .activity-submenu li {
+    padding: 00; /* Reduced padding to decrease vertical space */
+  }
+  .dropdown-divider {
+    margin: 0 0;
   }
 }

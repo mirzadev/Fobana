@@ -60,6 +60,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .link-menu-1,
 .link-menu-2 {
   padding-right: 3rem;
@@ -78,48 +79,34 @@
   margin-bottom: 1rem;
 }
 
-.location-address,
-.location-address1 {
+/* Clean up and fix layout for location address */
+.location-address {
   display: flex;
-  justify-content: space-between;
-  margin-left: 0.5rem;
-}
-
-.location-address p,
-.location-address1 P,
-.telephone-number,
-.email-address {
-  font-size: 1rem;
-}
-
-.Tel_email {
-  margin-left: 3rem;
+  flex-direction: column; /* Ensure the second paragraph stacks below */
+  margin: 0.5rem 2rem;
 }
 
 .loc_address_cont {
-  margin-top: -1rem;
+  display: flex;
+  align-items: center; /* Vertically align the image and text */
+  margin-bottom: 0.5rem;
+}
+
+.location-image {
+  margin-right: 10px; /* Space between image and text */
+  height: 40px;
+  width: 40px;
+  margin-left: -2rem;
+}
+
+.location-address p {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .footer-contact-us a img:hover {
   transform: scale(1.2);
-}
-
-.telephone,
-.email {
-  display: flex;
-}
-
-.telephone-number,
-.email-address {
-  margin-left: 1rem;
-  margin-top: 0.1rem;
-}
-
-.telephone-number {
-  margin-top: 0.2rem;
-}
-.email-address {
-  margin-top: 0.2rem;
 }
 
 .bottom a {
@@ -132,126 +119,572 @@
 .footer-contact-us a:hover {
   color: greenyellow;
 }
+.telephone,
+.email {
+  display: flex;
+  align-items: center; /* Vertically align the image and text */
+  gap: 1rem; /* Space between the image and the text */
+  margin-left: -1.7rem;
+}
+
+.telephone img,
+.email img {
+  height: 30px;
+  width: 30px;
+}
+
+.telephone-number,
+.email-address {
+  font-size: 1rem;
+}
+.telephone {
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Optional: Add some hover effect for the images */
+.telephone img:hover,
+.email img:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovered */
+}
+.telephone-number:hover {
+  color: greenyellow;
+}
 
 .copyright-note {
   display: flex;
-  margin-top: 2rem;
+  align-items: center; /* Vertically align the items in the center */
+  justify-content: center; /* Center the content horizontally */
   font-size: 1rem;
-  justify-content: center;
+  margin-top: 1rem;
+}
+
+.copyright-note p {
+  margin: 0 0.5rem; /* Add some space between the text elements */
+  font-size: 1rem; /* Adjust font size if needed */
+}
+
+.copyright-note img {
+  margin: 0 0.5rem; /* Add some space between the image and text */
+  height: 35px; /* Set a fixed height for the image */
+  width: 35px; /* Set a fixed width for the image */
 }
 
 .copyright-note a {
-  text-decoration: none;
-  color: #fafafa;
-  margin-left: 1rem;
-}
-.copyright-note p {
-  margin-bottom: 3rem;
-}
-.copyright-note p:hover {
-  color: greenyellow;
-  font-weight: bold;
+  display: flex;
+  align-items: center; /* Align everything in the same line */
+  text-decoration: none; /* Remove the underline from the link */
+  color: inherit; /* Inherit color from parent (e.g., white or default color) */
 }
 
 .copyright-note a:hover {
-  color: greenyellow;
-  font-weight: bold;
+  color: greenyellow; /* Add hover effect for the link */
 }
 
-.copyright-note a img:hover {
-  transform: scale(1.2);
-}
-.copyright-note a img {
-  margin-top: 0.4rem;
-}
-
-.footer a {
-  font-size: 0.9rem;
-}
 .footer-copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.1rem 15rem;
 }
-.footer-copyright p:hover {
-  color: greenyellow;
-  font-weight: bold;
-}
+
 .footer-copyright img:hover {
   transform: scale(1.2);
 }
 
+/* Media Query for Screens with max-width: 1024px (Laptops) */
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 1rem 0.5rem;
+  }
+
+  .footer h4 {
+    font-size: 1.2rem; /* Adjust font size for small screens */
+  }
+
+  .footer p {
+    font-size: 0.9rem; /* Adjust font size for small screens */
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .location-address,
+  .telephone,
+  .email {
+    margin-left: 0.5rem;
+  }
+
+  .location-address p,
+  .telephone-number,
+  .email-address {
+    font-size: 0.9rem;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .footer-copyright img {
+    height: 6rem;
+    width: 11rem;
+  }
+
+  .footer-contact-us h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .social-media {
+    flex-direction: column;
+  }
+
+  .contact-footer_items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact-us a img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  /* Adjust layout for telephone and email items */
+  .telephone,
+  .email {
+    justify-content: center;
+    margin-left: 0;
+    gap: 0.5rem;
+  }
+
+  .telephone-number,
+  .email-address {
+    font-size: 0.9rem;
+  }
+
+  .telephone img,
+  .email img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .copyright-note {
+    display: flex; /* Keep the items in a row */
+    justify-content: center; /* Center align the items horizontally */
+    align-items: center; /* Vertically center align the items */
+    text-align: center; /* Ensure the text is centered */
+    font-size: 1rem; /* Standard font size for tablets and small screens */
+    margin-top: 1rem; /* Add some space at the top */
+  }
+
+  .copyright-note p {
+    margin: 0 1rem; /* Add space between paragraphs and image */
+    font-size: 1rem; /* Adjust font size for better readability on tablet/medium screen */
+  }
+
+  .copyright-note img {
+    margin: 0 1rem; /* Add space around the image */
+    height: 35px; /* Keep the image size same as larger screens */
+    width: 35px; /* Ensure the image maintains the same size */
+  }
+
+  .copyright-note a {
+    display: flex; /* Keep the content in a row */
+    align-items: center; /* Center the items vertically */
+    justify-content: center; /* Center the items horizontally */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use inherited text color */
+  }
+
+  .copyright-note a:hover {
+    color: greenyellow; /* Maintain hover effect for the link */
+  }
+}
+
+/* Media Query for Screens with max-width: 850px (Tablets or small devices) */
 @media screen and (max-width: 850px) {
   .footer {
-    padding: 5rem 0.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .footer h4 {
+    font-size: 1.2rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .location-address,
+  .telephone,
+  .email {
+    margin-left: 0.5rem;
+  }
+
+  .location-address p,
+  .telephone-number,
+  .email-address {
+    font-size: 0.9rem;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .footer-copyright img {
+    height: 5rem;
+    width: 9rem;
+  }
+
+  .footer-contact-us {
+    padding: 0 1rem;
+  }
+
+  .social-media {
+    padding: 0 1rem;
+  }
+  .footer-contact-us h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .contact-footer_items {
+    align-items: center;
+  }
+
+  .footer-contact-us a img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  /* Adjust layout for telephone and email items */
+  .telephone,
+  .email {
+    justify-content: center;
+    margin-left: 0;
+    gap: 0.5rem;
+  }
+
+  .telephone-number,
+  .email-address {
+    font-size: 0.9rem;
+  }
+
+  .telephone img,
+  .email img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .copyright-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+
+  .copyright-note p {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .copyright-note img {
+    margin: 0 1rem;
+    height: 35px;
+    width: 35px;
+  }
+
+  .copyright-note a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .copyright-note a:hover {
+    color: greenyellow;
+  }
+}
+
+/* Media Query for Screens with max-width: 600px (Mobile devices) */
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 0.5rem 0.5rem;
   }
 
   .footer h4 {
     font-size: 1.1rem;
   }
 
-  .footer a {
-    font-size: 0.8rem;
-  }
   .footer p {
-    font-size: 0.8rem;
-  }
-  .copyright-note {
-    font-size: 0.8rem;
-  }
-
-  .social-media-div,
-  .useful-links,
-  .footer-contact-us,
-  .karigor-sponsors {
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
+    font-size: 0.85rem;
   }
 
   .bottom {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  /* Ensure social media and footer sections are still centered with no touching edges */
+  .footer-contact-us {
+    padding: 0 1rem;
+  }
+
+  .social-media {
+    padding: 0 1rem;
+  }
+
+  .location-address,
+  .telephone,
+  .email {
+    margin-left: 0.5rem;
+  }
+
   .location-address p,
-  .location-address1 p,
   .telephone-number,
   .email-address {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
-  .location-address,
-  .location-address1 {
-    margin-left: 0.3rem;
+
+  .footer-copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
   }
-  .Tel_email {
-    margin-left: 1rem;
+
+  .footer-copyright img {
+    height: 4rem;
+    width: 7rem;
   }
+
+  .footer-contact-us h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .social-media {
+    flex-direction: column;
+  }
+
+  .contact-footer_items {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer-contact-us a img {
     height: 1.5rem;
     width: 1.5rem;
   }
-  .location-address1 {
-    margin-top: 2rem;
+
+  .telephone,
+  .email {
+    justify-content: center;
+    gap: 0.5rem;
   }
-  .location-address a img {
-    margin-top: 1rem;
-    height: 2rem;
-    width: 2rem;
+
+  .telephone-number,
+  .email-address {
+    font-size: 0.85rem;
   }
-  .contact-footer_items {
-    margin-left: -0.2rem;
+
+  .telephone img,
+  .email img {
+    height: 20px;
+    width: 20px;
   }
-  .footer-copyright {
+
+  .copyright-note {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.1rem;
+  }
+
+  .copyright-note p {
+    margin: 0 1rem;
+    font-size: 0.85rem;
+  }
+
+  .copyright-note img {
+    margin: 0 1rem;
+    height: 30px;
+    width: 30px;
+  }
+
+  .copyright-note a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .copyright-note a:hover {
+    color: greenyellow;
+  }
+}
+
+/* Media Query for Screens with max-width: 400px (Small Mobile devices) */
+@media screen and (max-width: 400px) {
+  .footer {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .footer h4 {
+    font-size: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.75rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .useful-links {
+    padding: 0 0.5rem; /* Further reduce padding for small screens */
+  }
+
+  .link-menues {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-menu-1,
+  .link-menu-2,
+  .link-menu-3 {
+    padding: 0.5rem 0; /* Less padding for mobile devices */
+    width: 100%; /* Ensures full-width for smaller screens */
+    text-align: center;
+  }
+
+  /* Social media and footer content adjusted for small devices */
+  .footer-contact-us {
+    padding: 0 0.5rem;
+  }
+
+  .social-media {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
+
+  .location-address,
+  .telephone,
+  .email {
+    margin-left: 0.5rem;
+  }
+
+  .location-address p,
+  .telephone-number,
+  .email-address {
+    font-size: 0.75rem;
+  }
+
+  .footer-copyright {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.1rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
-  .footer-copyright img:hover {
-    transform: scale(1.1);
+
+  .footer-copyright img {
+    height: 3rem;
+    width: 5rem;
+  }
+
+  .footer-contact-us h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .social-media {
+    flex-direction: column;
+  }
+
+  .contact-footer_items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact-us a img {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .telephone,
+  .email {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .telephone-number,
+  .email-address {
+    font-size: 0.75rem;
+  }
+
+  .telephone img,
+  .email img {
+    height: 18px;
+    width: 18px;
+  }
+
+  .copyright-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 0;
+  }
+
+  .copyright-note p {
+    margin: 0 1rem;
+    font-size: 0.75rem;
+  }
+
+  .copyright-note img {
+    margin: 0 1rem;
+    height: 25px;
+    width: 25px;
+  }
+
+  .copyright-note a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .copyright-note a:hover {
+    color: greenyellow;
   }
 }
