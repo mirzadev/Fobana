@@ -69,45 +69,37 @@ const Footer = () => {
                 to="https://www.google.com/maps/place/512+Shady+Pine+Way,+Greenacres,+FL+33415/@26.6398988,-80.1460499,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9262ad0671287:0xde974d1673268148!8m2!3d26.639894!4d-80.143475!16s%2Fg%2F11cscj25n8?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noreferrer"
+                className="location-link"
               >
-                <img src={Location} alt="location" height="40" width="40" />
+                <div className="loc_address_cont">
+                  <img
+                    src={Location}
+                    alt="location"
+                    className="location-image"
+                  />
+                  <p className="location-address">
+                    4299 West Hillsboro Blvd, Coconut Creek, FL - 33073
+                  </p>
+                </div>
               </Link>
+              <div className="telephone">
+                <img
+                  src={Telephone}
+                  alt="telephone"
+                  className="telephone-image"
+                />
+                <p className="telephone-number">1(954) 818 2970 (Cell)</p>
+              </div>
               <Link
-                to="https://www.google.com/maps/place/512+Shady+Pine+Way,+Greenacres,+FL+33415/@26.6398988,-80.1460499,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9262ad0671287:0xde974d1673268148!8m2!3d26.639894!4d-80.143475!16s%2Fg%2F11cscj25n8?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+                to="mailto:fobanac@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="loc_address_cont">
-                  <p className="location-address">4299 West Hillsboro Blvd</p>
-                  <p className="location-address1">Coconut Creek, FL - 33073</p>
+                <div className="email">
+                  <img src={Email} alt="email" className="email-image" />
+                  <p className="email-address">fobanac@gmail.com</p>
                 </div>
               </Link>
-            </div>
-            <div className="Tel_email">
-              <div className="telephone">
-                <Link to="/">
-                  <img src={Telephone} alt="telephone" height="30" width="30" />
-                </Link>
-                <a>
-                  <p className="telephone-number">1(954) 818 2970 (Cell)</p>
-                </a>
-              </div>
-              <div className="email">
-                <Link
-                  to="mailto:qazirabbani@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={Email} alt="email" height="30" width="30" />
-                </Link>
-                <Link
-                  to="mailto:fobanac@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p className="email-address">fobanac@gmail.com</p>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -121,11 +113,9 @@ const Footer = () => {
           <p>Copyright @ 2025 FOBANA Central</p>
         </div>
         <div className="copyright-note">
-          <p>Tech Support:</p>
           <Link to="https://psptech.net/" target="_blank" rel="noreferrer">
+            <p>Tech Support:</p>
             <img src={pspTechLogo} alt="psptech" height="35" width="35" />
-          </Link>
-          <Link to="https://psptech.net/" target="_blank" rel="noreferrer">
             <p>PSP Technology Inc</p>
           </Link>
         </div>

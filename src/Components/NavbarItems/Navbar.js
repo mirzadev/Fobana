@@ -23,6 +23,10 @@ function Navbar() {
           </span>
         </Link>
 
+        <a class="header-link" href="/">
+          <span id="app-title">FOBANA</span>
+        </a>
+
         <div className="menu-icons" onClick={() => setClicked(!clicked)}>
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
@@ -56,7 +60,7 @@ function Navbar() {
             );
           })}
           {MenuItems1.map((item, index) => {
-            if (item.title === "Membership") {
+            if (item.title === "Multimedia") {
               return (
                 <li
                   key={item.id}
@@ -83,6 +87,7 @@ function Navbar() {
               </li>
             );
           })}
+
           {MenuItems2.map((item, index) => {
             if (item.title === "Convention") {
               return (
@@ -112,7 +117,7 @@ function Navbar() {
             );
           })}
           {MenuItems3.map((item, index) => {
-            if (item.title === "Multimedia") {
+            if (item.title === "Membership") {
               return (
                 <li
                   key={item.id}
