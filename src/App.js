@@ -9,6 +9,10 @@ import Contact from "./Routes/ContactUs";
 import FobanaAbout from "./Routes/FobanaAbout";
 import AboutExecCom from "./Routes/AboutExecCom";
 import ConstBylaws from "./Routes/ConstBylaws";
+import FobanaDocuments from "./Routes/FobanaDocuments";
+import StdCommittees from "./Routes/StdCommittee";
+import AnnualReportPage from "./Routes/AnnualReportPage";
+import Convention from "./Routes/Convention";
 
 function App() {
   return (
@@ -18,12 +22,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/aboutFobana" element={<FobanaAbout />} />
-
         <Route path="/contact" element={<Contact />} />
         <Route path="/execCommMem" element={<AboutExecCom />} />
         <Route path="/constitution" element={<ConstBylaws />} />
-        {/*<Route path="/weddings" element={<Wedding />} />
-        <Route path="/realestate" element={<RealEstate />} /> */}
+        <Route path="/documents" element={<FobanaDocuments />} />
+        <Route path="/standingCommittee" element={<StdCommittees />} />
+        <Route path="/annualReport" element={<AnnualReportPage />} />
+        <Route path="/convention" element={<Convention />} />
       </Routes>
     </div>
   );

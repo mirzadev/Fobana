@@ -1,0 +1,92 @@
+.Fobana_logo img {
+  width: 16rem;
+  height: auto;
+  margin-top: 4rem;
+}
+.commmittees-page {
+  font-family: "Lucida Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f4f4f4;
+}
+
+.content-wrapper {
+  padding-left: 20rem; /* Adds padding to the left */
+  padding-right: 20rem; /* Adds padding to the right */
+  text-align: center;
+}
+
+h1 {
+  /* margin-top: 6rem; */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.committees-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.committee-item {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.committee-item:hover {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+  .committees-page {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .content-wrapper {
+    padding-left: 0;
+    padding-right: 2rem;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+  }
+
+  .committee-item {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  .Fobana_logo img {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .committees-page {
+    padding: 0.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .committee-item {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+    .Fobana_logo img {
+      width: 10rem;
+    }
+  }
+}
