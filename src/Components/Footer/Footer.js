@@ -45,8 +45,8 @@ const Footer = () => {
           <h4>Useful Links</h4>
           <div className="link-menues">
             <div className="link-menu-1">
-              <Link to="https://fobanami2024.com/">FOBANA 2024</Link>
               <Link to="/about">About Us</Link>
+              <Link to="/multimedia">Multimedia</Link>
               <Link to="/membership">Membership</Link>
             </div>
             <div className="link-menu-2">
@@ -55,9 +55,9 @@ const Footer = () => {
               <Link to="/scholarship">Scholarship</Link>
             </div>
             <div className="link-menu-3">
-              <Link to="/multimedia">Multimedia</Link>
-              <Link to="/payment">Online Payment</Link>
+              <Link to="/payment">Pay Online</Link>
               <Link to="/contact">Contact Us</Link>
+              <Link to="https://fobanami2024.com/">FOBANA 2024</Link>
             </div>
           </div>
         </div>

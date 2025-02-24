@@ -114,7 +114,7 @@ export const EventDropDownMenu = [
   {
     index: 6,
     title: "FOBANA Convention",
-    url: "/execCommMem",
+    url: "/convention",
     CName: "dropdown-links",
   },
   {
