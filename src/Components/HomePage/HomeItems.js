@@ -7,7 +7,7 @@ function HomeItems() {
     <section className="my-5" id="home_section">
       <div>
         <div className="Fobana_logo">
-          <img id="AD-logo" src={Fobana_Logo}></img>
+          <img id="Fobana-logo" src={Fobana_Logo}></img>
         </div>
         <h1 id="featured_Album">
           FEDERATION OF BANGLADESHI ORGANIZATIONS IN NORTH AMERICA
@@ -59,7 +59,7 @@ function HomeItems() {
           উদযাপন করতে পারি!
         </p>
       </div>
-      <div></div>
+      {/* <div></div> */}
     </section>
   );
 }
