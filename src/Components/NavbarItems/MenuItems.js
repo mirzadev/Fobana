@@ -120,7 +120,7 @@ export const EventDropDownMenu = [
   {
     index: 7,
     title: "Sponsors",
-    url: "/annualReport",
+    url: "/sponsors",
     CName: "dropdown-links",
   },
   {

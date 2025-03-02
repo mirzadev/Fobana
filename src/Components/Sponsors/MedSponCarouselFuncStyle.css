@@ -1,27 +1,27 @@
 /* Default (Desktop/Regular Computer) */
-.sponsors-carousel-container {
-  padding: 1rem 4rem;
+.medSpon-carousel-container {
+  padding: 0.1rem 4rem;
   position: relative;
   width: 92%;
 }
 
-#sponsors-com-title {
+#medSpon-com-title {
   font-family: "Gill Sans MT";
   font-size: 2rem;
+  margin-bottom: -2rem;
 }
 
-.sponsors-carousel-item {
+.medSpon-carousel-item {
   text-align: center;
   position: relative;
   padding-right: -2rem;
-  margin: 0 10px; /* Space between items */
 }
 
-.sponsors-carousel-item img {
+.medSpon-carousel-item img {
   height: auto;
 }
 
-.sponsors-appt-title {
+.medSpon-appt-title {
   margin-top: 10px;
   color: #333;
   font-family: sans-serif;
@@ -32,7 +32,7 @@
   font-size: 30px;
   color: #000;
   position: absolute;
-  top: 40%;
+  top: 55%;
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
@@ -58,20 +58,19 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
+.Media-Spon {
+  margin-top: -3rem;
+}
 
 /* Laptop View (Max-width: 1024px) */
 @media (max-width: 1024px) {
-  .sponsors-carousel-container {
+  .medSpon-carousel-container {
     padding: 0.1rem 2rem;
     width: 100%;
   }
 
-  #sponsors-com-title {
+  #medSpon-com-title {
     font-size: 1.8rem; /* Smaller font size on laptops */
-  }
-
-  .sponsors-appt-title {
-    font-size: 1.5rem; /* Adjust image title font size */
   }
 
   .slick-arrow {
@@ -89,17 +88,14 @@
 
 /* iPhone View (Max-width: 850px) */
 @media (max-width: 850px) {
-  .sponsors-carousel-container {
+  .medSpon-carousel-container {
     padding: 0.1rem 2rem;
     width: 100%;
   }
 
-  #sponsors-com-title {
+  #medSpon-com-title {
     font-size: 1.5rem; /* Smaller font size on mobile */
-  }
-
-  .sponsors-appt-title {
-    font-size: 1.5rem; /* Smaller font size for image titles */
+    margin-bottom: -2rem;
   }
 
   .slick-arrow {
@@ -117,17 +113,13 @@
 
 /* iPhone SE or Very Small Devices (Max-width: 480px) */
 @media (max-width: 480px) {
-  .sponsors-carousel-container {
+  .medSpon-carousel-container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  #sponsors-com-title {
+  #medSpon-com-title {
     font-size: 1.2rem; /* Even smaller title for very small devices */
-  }
-
-  .sponsors-appt-title {
-    font-size: 1rem; /* Smaller image titles for very small screens */
   }
 
   .slick-arrow {
