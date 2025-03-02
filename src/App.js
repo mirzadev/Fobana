@@ -13,6 +13,7 @@ import FobanaDocuments from "./Routes/FobanaDocuments";
 import StdCommittees from "./Routes/StdCommittee";
 import AnnualReportPage from "./Routes/AnnualReportPage";
 import Convention from "./Routes/Convention";
+import Sponsors from "./Routes/SponsorsMain";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/standingCommittee" element={<StdCommittees />} />
         <Route path="/annualReport" element={<AnnualReportPage />} />
         <Route path="/convention" element={<Convention />} />
+        <Route path="/sponsors" element={<Sponsors />} />
       </Routes>
     </div>
   );
