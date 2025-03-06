@@ -1,0 +1,187 @@
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: "Lucida Sans";
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #efefef;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: sans-serif;
+}
+
+.faq-answer p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.6;
+  text-align: left; /* Align text to the left */
+  text-indent: 20px; /* Indentation on the first line */
+  margin-left: 0; /* Remove any left margin to ensure alignment */
+}
+.inline-link {
+  color: rgb(167, 17, 17);
+  text-decoration: none;
+  margin-left: 5px; /* Space before the link */
+  margin-right: 5px; /* Space after the link */
+  font-weight: bold;
+}
+
+.inline-link:hover {
+  color: #007bff;
+}
+.Fobana_logo img {
+  width: 16rem;
+  height: auto;
+}
+
+/* For screens 1025px and smaller */
+@media screen and (max-width: 1025px) {
+  .faq-container {
+    width: 75%;
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .faq-question {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.95rem;
+  }
+
+  .inline-link {
+    font-size: 0.95rem;
+  }
+  .Fobana_logo img {
+    width: 14rem;
+    height: auto;
+  }
+}
+
+/* For screens 850px and smaller */
+@media screen and (max-width: 850px) {
+  .faq-container {
+    width: 90%;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+
+  .inline-link {
+    font-size: 0.9rem;
+  }
+  .Fobana_logo img {
+    width: 12rem;
+    height: auto;
+  }
+}
+
+/* For screens 600px and smaller */
+@media screen and (max-width: 600px) {
+  .faq-container {
+    width: 95%;
+    padding: 1rem 1rem;
+    margin-top: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    font-size: 0.85rem;
+  }
+
+  .inline-link {
+    font-size: 0.85rem;
+  }
+  .Fobana_logo img {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+/* For screens 400px and smaller */
+@media screen and (max-width: 400px) {
+  .faq-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+  }
+
+  .faq-answer {
+    font-size: 0.8rem;
+  }
+
+  .inline-link {
+    font-size: 0.8rem;
+  }
+  .Fobana_logo img {
+    width: 8rem;
+    height: auto;
+  }
+}

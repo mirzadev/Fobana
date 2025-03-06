@@ -19,7 +19,7 @@ function ConstitutionsBylaws() {
   return (
     <div className="constBylaws-container">
       <div className="Fobana_logo">
-        <img id="AD-logo" src={Fobana_Logo}></img>
+        <img id="Fobana-logo" src={Fobana_Logo}></img>
       </div>
       <h1>CONSTITUTIONS AND BYLAWS</h1>
       <div>

@@ -10,22 +10,9 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.YouthClubLogo {
-  display: flex;
-  justify-content: center; /* Center align the logo */
-  margin-bottom: 3rem;
-}
-
-.YouthClubLogo img {
-  width: 100%;
-  max-width: 600px; /* Max width for large screens */
-  height: auto;
-  object-fit: contain; /* Ensures image fits without cropping */
-}
-
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 5 images per row */
+  grid-template-columns: repeat(2, 1fr); /* 5 images per row */
   gap: 10px;
   justify-items: center;
   margin-bottom: 20px;
@@ -84,13 +71,14 @@ h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 1;
+  background: none;
 }
 
 .arrow-button.prev {
@@ -111,10 +99,10 @@ h1 {
 
 .close {
   position: absolute;
-  top: 5px;
-  right: 20px;
+  top: 10px;
+  right: -10rem;
   font-size: 30px;
-  background: none;
+  background-color: none;
   color: white;
   border: none;
   cursor: pointer;
@@ -136,11 +124,6 @@ h1 {
     font-size: 2.5rem; /* Slightly smaller font size for laptops */
     margin-bottom: 1.5rem;
   }
-
-  .YouthClubLogo img {
-    width: 90%; /* Make the logo smaller on laptop screens */
-    max-width: 500px; /* Reduce the max width */
-  }
 }
 
 @media screen and (max-width: 850px) {
@@ -152,21 +135,11 @@ h1 {
     font-size: 1.5rem; /* Smaller font size for mobile */
     margin-bottom: 1rem; /* Reduce margin for mobile */
   }
-
-  .YouthClubLogo img {
-    width: 90%; /* Logo should take most of the screen width */
-    max-width: 400px; /* Reduce max width for mobile */
-  }
 }
 
 @media (max-width: 480px) {
   h1 {
     font-size: 1.5rem; /* Smaller font size for very small screens */
     margin-bottom: 0.8rem; /* Smaller margin for compact screens */
-  }
-
-  .YouthClubLogo img {
-    width: 80%; /* Make logo smaller for very small screens */
-    max-width: 250px; /* Further reduce max width */
   }
 }
