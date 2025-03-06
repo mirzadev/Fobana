@@ -14,6 +14,8 @@ import StdCommittees from "./Routes/StdCommittee";
 import AnnualReportPage from "./Routes/AnnualReportPage";
 import Convention from "./Routes/Convention";
 import Sponsors from "./Routes/SponsorsMain";
+import FAQ from "./Routes/FreqAskedQues";
+import PhotoGallery from "./Routes/FOBANAPhotoGalley";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         <Route path="/annualReport" element={<AnnualReportPage />} />
         <Route path="/convention" element={<Convention />} />
         <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/photoGallery" element={<PhotoGallery />} />
       </Routes>
     </div>
   );

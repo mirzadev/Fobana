@@ -24,7 +24,7 @@ export const MenuItems1 = [
     ddIcon: "fas fa-caret-down",
   },
 ];
-
+/*
 export const MenuItems2 = [
   {
     title: "Convention",
@@ -34,7 +34,7 @@ export const MenuItems2 = [
     ddIcon: "fas fa-caret-down",
   },
 ];
-
+*/
 export const MenuItems3 = [
   {
     title: "Membership",
@@ -168,7 +168,7 @@ export const EventDropDownMenu1 = [
     CName: "dropdown-links",
   },
 ];
-
+/*
 export const EventDropDownMenu2 = [
   {
     index: 0,
@@ -183,6 +183,7 @@ export const EventDropDownMenu2 = [
     CName: "dropdown-links",
   },
 ];
+*/
 export const EventDropDownMenu3 = [
   {
     index: 0,

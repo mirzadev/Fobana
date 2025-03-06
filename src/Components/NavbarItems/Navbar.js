@@ -5,14 +5,14 @@ import { MenuItems, MenuItems1, MenuItems2, MenuItems3 } from "./MenuItems";
 import { Link } from "react-router-dom";
 import Dropdown from "../Drop-Down-Menu/ActivityDropDown";
 import Dropdown1 from "../Drop-Down-Menu/ActivityDropDown1";
-import Dropdown2 from "../Drop-Down-Menu/ActivityDropDown2";
+// import Dropdown2 from "../Drop-Down-Menu/ActivityDropDown2";
 import Dropdown3 from "../Drop-Down-Menu/ActivityDropDown3";
 
 function Navbar() {
   {
     const [dropdown, setDropdown] = useState(false);
     const [dropdown1, setDropdown1] = useState(false);
-    const [dropdown2, setDropdown2] = useState(false);
+    // const [dropdown2, setDropdown2] = useState(false);
     const [dropdown3, setDropdown3] = useState(false);
     const [clicked, setClicked] = useState(false);
     return (
@@ -88,7 +88,7 @@ function Navbar() {
             );
           })}
 
-          {MenuItems2.map((item, index) => {
+          {/* {MenuItems2.map((item, index) => {
             if (item.title === "Convention") {
               return (
                 <li
@@ -115,7 +115,7 @@ function Navbar() {
                 </Link>
               </li>
             );
-          })}
+          })} */}
           {MenuItems3.map((item, index) => {
             if (item.title === "Membership") {
               return (
