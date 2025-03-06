@@ -1,0 +1,38 @@
+.FobanaVideo {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.FobanaVideo h1 {
+  font-size: 2.65rem;
+  font-family: "Lucida Sans";
+  font-weight: bold;
+  margin-top: 6rem;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.video-embed {
+  width: 100%;
+  max-width: 800px; /* Max width of the embedded player */
+}
+
+.youtube-link {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.youtube-link:hover {
+  background-color: #cc0000;
+}

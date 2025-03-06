@@ -16,6 +16,7 @@ import Convention from "./Routes/Convention";
 import Sponsors from "./Routes/SponsorsMain";
 import FAQ from "./Routes/FreqAskedQues";
 import PhotoGallery from "./Routes/FOBANAPhotoGalley";
+import FobanaVDO from "./Routes/FobanaVDO";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/photoGallery" element={<PhotoGallery />} />
+        <Route path="/videos" element={<FobanaVDO />} />
       </Routes>
     </div>
   );
