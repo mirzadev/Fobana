@@ -7,19 +7,29 @@
   font-size: 2.65rem;
   font-family: "Lucida Sans";
   font-weight: bold;
-  margin-top: 6rem;
+  margin-top: 7rem;
+  margin-bottom: -1rem;
 }
 
 .video-container {
   display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.video {
+  width: 48%;
+  max-width: 800px;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
 
 .video-embed {
   width: 100%;
-  max-width: 800px; /* Max width of the embedded player */
+  max-width: 800px;
 }
 
 .youtube-link {
@@ -35,4 +45,47 @@
 
 .youtube-link:hover {
   background-color: #cc0000;
+}
+
+/* 850px and below */
+@media (max-width: 850px) {
+  .FobanaVideo h1 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: -1.5rem;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .video {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .video-embed {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .youtube-link {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 400px) {
+  .FobanaVideo h1 {
+    font-size: 1.4rem;
+  }
+
+  .youtube-link {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
