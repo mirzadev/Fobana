@@ -589,9 +589,8 @@
     text-align: center;
   }
   .useful-links {
-    padding: 0 0.5rem; /* Further reduce padding for small screens */
+    padding: 0 0.5rem;
   }
-
   .link-menues {
     flex-direction: column;
     align-items: center;
@@ -600,12 +599,11 @@
   .link-menu-1,
   .link-menu-2,
   .link-menu-3 {
-    padding: 0.5rem 0; /* Less padding for mobile devices */
-    width: 100%; /* Ensures full-width for smaller screens */
+    padding: 0.5rem 0;
+    width: 100%;
     text-align: center;
   }
 
-  /* Social media and footer content adjusted for small devices */
   .footer-contact-us {
     padding: 0 0.5rem;
   }
