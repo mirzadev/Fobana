@@ -1,69 +1,137 @@
-.FobanaVideo {
+.FobanaVideo-container {
   text-align: center;
-  font-family: Arial, sans-serif;
+  align-items: center;
+  /* padding: 0 20rem; */
+  margin-top: 7rem;
 }
 
-.FobanaVideo h1 {
+.FobanaVideo-container h1 {
   font-size: 2.65rem;
   font-family: "Lucida Sans";
   font-weight: bold;
-  margin-top: 7rem;
-  margin-bottom: -1rem;
-  text-align: center;
+  margin-bottom: -1.5rem;
 }
 
-.video-container {
+.Video-container {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
+  /* flex-direction: column; */
+  /* gap: 20px; */
+}
 .video {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  width: 48%;
+  height: auto;
 }
 
 .video-embed {
+  position: relative;
+  width: 100%; /* Make the video container take full width */
+  height: 0;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  background-color: #000; /* Background for video container */
+  box-sizing: border-box;
+}
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 800px;
+  height: 100%;
 }
 
 .youtube-link {
   margin-top: 10px;
   padding: 10px 20px;
-  border-radius: 8px;
-  background-color: #ff0000;
+  background-color: #ff5733;
   color: white;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .youtube-link:hover {
   background-color: #cc0000;
 }
-
-/* 850px and below */
 @media (max-width: 850px) {
-  .FobanaVideo h1 {
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    margin-bottom: -1.5rem;
-    align-items: center;
+  .FobanaVideo-container h1 {
+    font-size: 1.7rem;
+    margin-top: -3rem;
   }
-  .youtube-link {
-    font-size: 14px;
-    padding: 8px 124px;
+
+  .video-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .video {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .video-embed {
+    width: 90%;
+    height: auto;
   }
 }
+
 @media (max-width: 600px) {
   .FobanaVideo h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .video-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .video {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .video-embed {
+    width: 85%;
+    height: auto;
   }
 
   .youtube-link {
-    font-size: 12px;
-    padding: 6px 12px;
+    width: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .FobanaVideo h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .video-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .video {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .video-embed {
+    width: 80%;
+    height: auto;
+  }
+
+  .youtube-link {
+    width: 100%;
   }
 }
