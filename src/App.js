@@ -17,7 +17,15 @@ import Sponsors from "./Routes/SponsorsMain";
 import FAQ from "./Routes/FreqAskedQues";
 import PhotoGallery from "./Routes/FOBANAPhotoGalley";
 import FobanaVDO from "./Routes/FobanaVDO";
-
+import Publications from "./Routes/Publications";
+import MultimediaGallery from "./Routes/MultimediaGallery";
+import PhotoGallery2007 from "./Components/Multimedia/PhotoGallery2007/PhotoGallery2007";
+import PhotoGallery2008 from "./Components/Multimedia/PhotoGallery2008/PhotoGallery2008";
+import PhotoGallery2009 from "./Components/Multimedia/PhotoGallery2009/PhotoGallery2009";
+import PhotoGallery2012 from "./Components/Multimedia/PhotoGallery2012/PhotoGallery2012";
+import PhotoGallery2013 from "./Components/Multimedia/PhotoGallery2013/PhotoGallery2013";
+import PhotoGallery2017 from "./Components/Multimedia/PhotoGallery2017/PhotoGallery2017";
+import PhotoGallery2021 from "./Components/Multimedia/PhotoGallery2021/PhotoGallery2021";
 function App() {
   return (
     <div className="App">
@@ -37,6 +45,15 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/photoGallery" element={<PhotoGallery />} />
         <Route path="/videos" element={<FobanaVDO />} />
+        <Route path="/publications" element={<Publications />} />
+        <Route path="/multimedia" element={<MultimediaGallery />} />
+        <Route path="/fobana2007" element={<PhotoGallery2007 />} />
+        <Route path="/fobana2008" element={<PhotoGallery2008 />} />
+        <Route path="/fobana2009" element={<PhotoGallery2009 />} />
+        <Route path="/fobana2012" element={<PhotoGallery2012 />} />
+        <Route path="/fobana2013" element={<PhotoGallery2013 />} />
+        <Route path="/fobana2017" element={<PhotoGallery2017 />} />
+        <Route path="/fobana2021" element={<PhotoGallery2021 />} />
       </Routes>
     </div>
   );

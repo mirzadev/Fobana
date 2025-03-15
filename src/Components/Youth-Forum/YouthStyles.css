@@ -1,4 +1,4 @@
-.App {
+.youthClub-container {
   text-align: center;
   padding: 0.2rem 4rem;
   font-family: sans-serif;
@@ -23,7 +23,7 @@ h1 {
   object-fit: contain; /* Ensures image fits without cropping */
 }
 
-.gallery {
+.youth-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 5 images per row */
   gap: 10px;
@@ -127,7 +127,7 @@ h1 {
   background: none;
 }
 @media (max-width: 1024px) {
-  .App {
+  .youthClub-container {
     text-align: center;
     padding: 0.2rem 1rem;
     font-family: sans-serif;
@@ -144,7 +144,7 @@ h1 {
 }
 
 @media screen and (max-width: 850px) {
-  .gallery {
+  .youth-gallery {
     display: flex;
     flex-direction: column;
   }

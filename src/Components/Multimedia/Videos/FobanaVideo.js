@@ -5,9 +5,11 @@ import YouTube from "react-youtube";
 
 const FobanaVideo = () => {
   const videoIds = [
-    { id: "oh8vgivjFCE", startTime: 38 },
-    { id: "C5aAnNpODP8", startTime: 21 },
-    { id: "SSztYU4pW6o", startTime: 70 },
+    { id: "oh8vgivjFCE", startTime: 0 },
+    { id: "C5aAnNpODP8", startTime: 0 },
+    { id: "SSztYU4pW6o", startTime: 0 },
+    { id: "cnbruaNrfGE", startTime: 0 },
+    { id: "JYwCk_N1Cjg", startTime: 0 },
   ];
 
   const handleVideoClick = (videoId) => {
@@ -16,9 +18,9 @@ const FobanaVideo = () => {
   };
 
   return (
-    <div className="FobanaVideo">
+    <div className="FobanaVideo-container">
       <h1>FOBANA VIDEOS</h1>
-      <div className="video-container">
+      <div className="Video-container">
         {videoIds.map((video, index) => (
           <div key={index} className="video">
             <div className="video-embed">
@@ -26,7 +28,7 @@ const FobanaVideo = () => {
                 videoId={video.id}
                 opts={{
                   playerVars: {
-                    autoplay: 1,
+                    autoplay: 0,
                     start: video.startTime,
                   },
                 }}

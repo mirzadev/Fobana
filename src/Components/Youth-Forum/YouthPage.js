@@ -66,13 +66,13 @@ const YouthGallery = () => {
   };
 
   return (
-    <div className="App">
+    <div className="youthClub-container">
       <h1>FOBANA YOUTH CLUB</h1>
       <div className="YouthClubLogo">
         <img src={YouthClubLogo} alt="youthLogo" height="200" width="400" />
       </div>
       {/* Display the image thumbnails in a grid */}
-      <div className="gallery">
+      <div className="youth-gallery">
         {images.map((image, index) => (
           <div
             className="thumbnail"
