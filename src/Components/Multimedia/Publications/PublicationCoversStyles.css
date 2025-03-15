@@ -1,0 +1,173 @@
+.Publication-container {
+  text-align: center;
+  padding: 0.2rem 4rem;
+  font-family: sans-serif;
+  margin-top: 3rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem; /* Larger font size for desktop */
+  font-family: sans-serif;
+  margin-bottom: 2rem;
+}
+
+.YouthClubLogo {
+  display: flex;
+  justify-content: center; /* Center align the logo */
+  margin-bottom: 3rem;
+}
+
+.YouthClubLogo img {
+  width: 100%;
+  max-width: 600px; /* Max width for large screens */
+  height: auto;
+  object-fit: contain; /* Ensures image fits without cropping */
+}
+
+.publication-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 5 images per row */
+  gap: 10px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  width: 100%; /* Ensure the container takes full width available */
+  height: auto; /* Fixed height for uniform image size */
+  overflow: hidden; /* Hide overflow to crop the image */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.thumbnail img {
+  width: 100%; /* Fill the container width */
+  height: 100%; /* Fill the container height */
+  object-fit: cover; /* Crop the image while maintaining aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain; /* Make sure image fits without cropping */
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow-button.prev {
+  left: -9rem;
+  background: none;
+}
+.arrow-button.prev:hover {
+  color: red;
+}
+
+.arrow-button.next {
+  right: -9rem;
+  background: none;
+}
+.arrow-button.next:hover {
+  color: red;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 6rem;
+}
+
+.close:hover {
+  color: red;
+  background: none;
+}
+@media (max-width: 1024px) {
+  .App {
+    text-align: center;
+    padding: 0.2rem 1rem;
+    font-family: sans-serif;
+  }
+  h1 {
+    font-size: 2.5rem; /* Slightly smaller font size for laptops */
+    margin-bottom: 1.5rem;
+  }
+
+  .YouthClubLogo img {
+    width: 90%; /* Make the logo smaller on laptop screens */
+    max-width: 500px; /* Reduce the max width */
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    margin-bottom: 1rem; /* Reduce margin for mobile */
+  }
+
+  .YouthClubLogo img {
+    width: 90%; /* Logo should take most of the screen width */
+    max-width: 400px; /* Reduce max width for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Smaller font size for very small screens */
+    margin-bottom: 0.8rem; /* Smaller margin for compact screens */
+  }
+
+  .YouthClubLogo img {
+    width: 80%; /* Make logo smaller for very small screens */
+    max-width: 250px; /* Further reduce max width */
+  }
+}

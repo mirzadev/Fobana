@@ -1,34 +1,37 @@
-.App {
+.PhotoGallery-container {
   text-align: center;
   padding: 0.2rem 4rem;
   font-family: sans-serif;
+  margin-top: 3rem;
 }
+
 h1 {
   text-align: center;
-  font-size: 2rem; /* Larger font size for desktop */
-  font-family: sans-serif;
+  font-size: 2rem;
+  font-family: "Gill Sans MT";
   margin-bottom: 2rem;
 }
 
-.gallery {
+.photo_gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 5 images per row */
+  grid-template-columns: repeat(2, 1fr); /* Default: 2 images per row */
   gap: 10px;
   justify-items: center;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .thumbnail {
-  width: 100%; /* Ensure the container takes full width available */
-  height: auto; /* Fixed height for uniform image size */
-  overflow: hidden; /* Hide overflow to crop the image */
-  border-radius: 8px; /* Rounded corners */
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .thumbnail img {
-  width: 100%; /* Fill the container width */
-  height: 100%; /* Fill the container height */
-  object-fit: cover; /* Crop the image while maintaining aspect ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -36,6 +39,7 @@ h1 {
   transform: scale(1.05);
 }
 
+/* Modal Styling */
 .modal {
   position: fixed;
   top: 0;
@@ -62,17 +66,17 @@ h1 {
 .modal-image {
   max-width: 80%;
   max-height: 80%;
-  object-fit: contain; /* Make sure image fits without cropping */
+  object-fit: contain;
   border-radius: 8px;
   margin-top: 4rem;
 }
 
+/* Arrows */
 .arrow-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 40px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   color: white;
   border: none;
   padding: 10px;
@@ -83,7 +87,6 @@ h1 {
 
 .arrow-button.prev {
   left: -9rem;
-  background: none;
 }
 .arrow-button.prev:hover {
   color: red;
@@ -91,18 +94,17 @@ h1 {
 
 .arrow-button.next {
   right: -9rem;
-  background: none;
 }
 .arrow-button.next:hover {
   color: red;
 }
 
+/* Close Button */
 .close {
   position: absolute;
   top: 10px;
   right: -10rem;
   font-size: 30px;
-  background-color: none;
   color: white;
   border: none;
   cursor: pointer;
@@ -112,34 +114,46 @@ h1 {
 
 .close:hover {
   color: red;
-  background: none;
 }
+
 @media (max-width: 1024px) {
-  .App {
-    text-align: center;
+  .PhotoGallery-container {
     padding: 0.2rem 1rem;
-    font-family: sans-serif;
   }
   h1 {
-    font-size: 2.5rem; /* Slightly smaller font size for laptops */
+    font-size: 2rem;
     margin-bottom: 1.5rem;
   }
 }
 
-@media screen and (max-width: 850px) {
-  .gallery {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 850px) {
+  .Multimedia-container {
+    padding: 0.2rem 0;
+  }
+  .photo_gallery {
+    display: flex !important; /* Override any conflicting styles */
+    flex-direction: column !important;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .thumbnail {
+    width: 100%;
+    max-width: 400px;
   }
   h1 {
-    font-size: 1.5rem; /* Smaller font size for mobile */
-    margin-bottom: 1rem; /* Reduce margin for mobile */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.5rem; /* Smaller font size for very small screens */
-    margin-bottom: 0.8rem; /* Smaller margin for compact screens */
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  .thumbnail {
+    width: 100%;
+    max-width: 100%;
   }
 }

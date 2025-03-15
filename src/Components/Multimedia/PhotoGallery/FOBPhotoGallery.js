@@ -8,7 +8,7 @@ import image5 from "../../../Assets/Multimedia/PhotoGallery/fobana6.jpg";
 import image6 from "../../../Assets/Multimedia/PhotoGallery/fobana7.jpg";
 import image7 from "../../../Assets/Multimedia/PhotoGallery/all_musicians.jpg";
 import image8 from "../../../Assets/Multimedia/PhotoGallery/Fobana-florida-1.jpg";
-import image9 from "../../../Assets/Multimedia/PhotoGallery/committee1.jpg";
+import image9 from "../../../Assets/Multimedia/PhotoGallery/tajul-imam2.jpg";
 import image10 from "../../../Assets/Multimedia/PhotoGallery/fobana_kid1.jpg";
 import image11 from "../../../Assets/Multimedia/PhotoGallery/fobana_kid2.jpg";
 import image12 from "../../../Assets/Multimedia/PhotoGallery/fobana_kid_3.jpg";
@@ -23,7 +23,6 @@ import image20 from "../../../Assets/Multimedia/PhotoGallery/singers1.jpg";
 import image21 from "../../../Assets/Multimedia/PhotoGallery/singers_la.jpg";
 import image22 from "../../../Assets/Multimedia/PhotoGallery/situtul3.jpg";
 import image23 from "../../../Assets/Multimedia/PhotoGallery/situutul6.jpg";
-import image24 from "../../../Assets/Multimedia/PhotoGallery/tajul-imam2.jpg";
 
 const FOBPhotoGallery = () => {
   // Array to hold image file paths
@@ -51,7 +50,6 @@ const FOBPhotoGallery = () => {
     image21,
     image22,
     image23,
-    image24,
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal open/close
@@ -81,10 +79,10 @@ const FOBPhotoGallery = () => {
   };
 
   return (
-    <div className="App">
+    <div className="PhotoGallery-container">
       <h1>FOBANA PHOTO GALLERY</h1>
       {/* Display the image thumbnails in a grid */}
-      <div className="gallery">
+      <div className="photo_gallery">
         {images.map((image, index) => (
           <div
             className="thumbnail"

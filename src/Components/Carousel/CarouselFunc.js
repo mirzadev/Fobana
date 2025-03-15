@@ -7,6 +7,7 @@ import img1 from "../../Assets/HomePageImg/scroll-1.jpg";
 import img2 from "../../Assets/HomePageImg/scroll-2.jpg";
 import img3 from "../../Assets/HomePageImg/scroll-3.jpg";
 import img4 from "../../Assets/HomePageImg/scroll-4.jpg";
+import img5 from "../../Assets/HomePageImg/scroll-5.jpg";
 // installed --  npm install react-slick slick-carousel
 
 const Carousel = () => {
@@ -63,13 +64,13 @@ const Carousel = () => {
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        {/* <div>
+        <div>
           <img
             src={img5}
             alt="Image 5"
             style={{ width: "100%", height: "auto" }}
           />
-        </div> */}
+        </div>
       </Slider>
     </div>
   );
