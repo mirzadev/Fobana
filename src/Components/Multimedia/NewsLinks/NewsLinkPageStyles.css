@@ -1,0 +1,105 @@
+.news-container {
+  text-align: center;
+  padding: 0.2rem 4rem;
+  font-family: sans-serif;
+  margin-top: 5rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem; /* Larger font size for desktop */
+  font-family: sans-serif;
+  margin-bottom: 2rem;
+}
+
+#Fobanalogo {
+  width: 16rem;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+#media_thumbnails {
+  width: 25rem;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: -3rem;
+  transition: transform 0.3s ease;
+}
+
+#media_thumbnails:hover {
+  transform: scale(1.05);
+}
+
+.news-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background 0.3s;
+}
+
+.news-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .news-container {
+    padding: 0.2rem 1rem;
+    margin-top: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem; /* Make title smaller */
+    margin-bottom: 1rem;
+  }
+
+  #Fobanalogo {
+    width: 10rem;
+    margin-top: 3rem;
+  }
+
+  #media_thumbnails {
+    width: 17rem; /* Further adjust width */
+  }
+
+  .news-button {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+    margin-top: 0;
+  }
+}
+
+/* 🔹 Mobile Screens (Max 480px) */
+@media (max-width: 480px) {
+  .news-container {
+    padding: 0.2rem 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #Fobanalogo {
+    width: 8rem; /* Smaller logo */
+  }
+
+  #media_thumbnails {
+    width: 15rem; /* Adjust for mobile */
+    margin-top: -1rem;
+  }
+
+  .news-button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

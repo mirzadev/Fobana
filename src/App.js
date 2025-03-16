@@ -26,6 +26,7 @@ import PhotoGallery2012 from "./Components/Multimedia/PhotoGallery2012/PhotoGall
 import PhotoGallery2013 from "./Components/Multimedia/PhotoGallery2013/PhotoGallery2013";
 import PhotoGallery2017 from "./Components/Multimedia/PhotoGallery2017/PhotoGallery2017";
 import PhotoGallery2021 from "./Components/Multimedia/PhotoGallery2021/PhotoGallery2021";
+import NewsLink from "./Routes/NewsLink";
 function App() {
   return (
     <div className="App">
@@ -54,6 +55,7 @@ function App() {
         <Route path="/fobana2013" element={<PhotoGallery2013 />} />
         <Route path="/fobana2017" element={<PhotoGallery2017 />} />
         <Route path="/fobana2021" element={<PhotoGallery2021 />} />
+        <Route path="/newsLinks" element={<NewsLink />} />
       </Routes>
     </div>
   );
