@@ -2,7 +2,6 @@ import React from "react";
 import Fobana_Logo from "../../../Assets/Cover/Fobana_Logo.png";
 import Press_Conference from "../../../Assets/Cover/Media-Conference.png";
 import "./NewsLinkPageStyles.css";
-
 const NewsLinkPage = () => {
   const newsLink =
     "https://www.ajkerpatrika.com/entertainment/cinema/ajpiivdeqjzfy";

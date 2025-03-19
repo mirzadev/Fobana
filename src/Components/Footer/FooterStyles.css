@@ -100,6 +100,7 @@
 
 .location-address p {
   font-size: 1rem;
+  color: #fafafa;
   margin: 0;
   line-height: 1.4;
 }
@@ -195,6 +196,9 @@
 
 .footer-copyright img:hover {
   transform: scale(1.2);
+}
+.footer-copyright p {
+  color: #fafafa;
 }
 
 /* Media Query for Screens with max-width: 1024px (Laptops) */
@@ -344,7 +348,7 @@
     height: 20px;
     width: 20px;
     margin-left: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
   }
 
   .telephone,

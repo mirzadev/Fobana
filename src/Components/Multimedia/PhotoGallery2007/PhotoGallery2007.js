@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./PhotoGallery2007Styles.css";
+import Footer from "../../Footer/Footer";
 import image1 from "../../../Assets/Multimedia/PhotoGallery/PhotoGallery_2007/FOBANA2007_001.jpg";
 import image2 from "../../../Assets/Multimedia/PhotoGallery/PhotoGallery_2007/FOBANA2007_002.jpg";
 import image3 from "../../../Assets/Multimedia/PhotoGallery/PhotoGallery_2007/FOBANA2007_003.jpg";
@@ -280,6 +281,7 @@ const PhotoGallery2007 = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

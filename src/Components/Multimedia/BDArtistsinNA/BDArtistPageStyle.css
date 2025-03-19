@@ -1,0 +1,28 @@
+.artist-container {
+  text-align: center;
+  padding: 0.2rem 4rem;
+  font-family: sans-serif;
+  margin-top: 5rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem; /* Larger font size for desktop */
+  font-family: "Lucida Sans";
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .artist-container {
+    padding: 0.1rem 2rem;
+    margin-top: 2rem;
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .Fobana_logo img {
+      width: 12rem;
+    }
+  }
+}

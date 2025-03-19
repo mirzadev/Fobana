@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-router-dom";
 import "./ContactUsStyles.css";
@@ -10,6 +10,16 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(null);
 
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus(null);
+      }, 10000); // Clear message after 10 seconds
+
+      return () => clearTimeout(timer); // Cleanup on unmount
+    }
+  }, [status]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -20,17 +30,17 @@ const ContactUs = () => {
 
     // Send email using EmailJS service
     const templateParams = {
-      from_name: name,
-      from_email: email,
+      user_name: name,
+      user_email: email,
       message: message,
     };
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_gxj7m54",
+        "template_xcr668p",
         templateParams,
-        "YOUR_USER_ID"
+        "4Qy3fWJQ5ATnWcwXq"
       )
       .then(
         (response) => {
