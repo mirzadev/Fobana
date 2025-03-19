@@ -27,6 +27,9 @@ import PhotoGallery2013 from "./Components/Multimedia/PhotoGallery2013/PhotoGall
 import PhotoGallery2017 from "./Components/Multimedia/PhotoGallery2017/PhotoGallery2017";
 import PhotoGallery2021 from "./Components/Multimedia/PhotoGallery2021/PhotoGallery2021";
 import NewsLink from "./Routes/NewsLink";
+import BDArtist from "./Routes/BDArtists";
+import BDScholars from "./Routes/BDScholars";
+import MembershipForm from "./Routes/MembershipForm";
 function App() {
   return (
     <div className="App">
@@ -56,6 +59,9 @@ function App() {
         <Route path="/fobana2017" element={<PhotoGallery2017 />} />
         <Route path="/fobana2021" element={<PhotoGallery2021 />} />
         <Route path="/newsLinks" element={<NewsLink />} />
+        <Route path="/bdArtist" element={<BDArtist />} />
+        <Route path="/bdScholars" element={<BDScholars />} />
+        <Route path="/membershipForm" element={<MembershipForm />} />
       </Routes>
     </div>
   );

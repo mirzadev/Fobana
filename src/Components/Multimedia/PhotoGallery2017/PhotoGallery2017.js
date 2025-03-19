@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./PhotoGallery2017Styles.css";
+import Footer from "../../Footer/Footer";
 import image1 from "../../../Assets/Multimedia/PhotoGallery/PhotoGallery_2017/FOBANA_2017_001.jpg";
 import image2 from "../../../Assets/Multimedia/PhotoGallery/PhotoGallery_2017/FOBANA_2017_002.jpg";
 import image3 from "../../../Assets/Multimedia/PhotoGallery/PhotoGallery_2017/FOBANA_2017_003.jpg";
@@ -77,6 +78,7 @@ const PhotoGallery2017 = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };
