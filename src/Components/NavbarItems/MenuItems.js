@@ -194,7 +194,7 @@ export const EventDropDownMenu3 = [
   {
     index: 1,
     title: "Executive Membership Nomination",
-    url: "/portraits2",
+    url: "/execmemberForm",
     CName: "dropdown-links",
   },
   {
