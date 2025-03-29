@@ -15,12 +15,14 @@ const Carousel = () => {
   const settings = {
     dots: true, // Show navigation dots
     infinite: true, // Infinite looping
-    speed: 800, // Transition speed (in ms)
+    speed: 4000, // Transition speed (in ms). More you put transition will take more slow
     slidesToShow: 1, // Show 1 slide at a time
     slidesToScroll: 1, // Scroll 1 slide at a time
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 5000, // Auto-slide every 3 seconds
+    autoplaySpeed: 6000, // Auto-slide every 3 seconds
     pauseOnHover: true, // Pause autoplay when the user hovers over the carousel
+    fade: true, // Enables fade-in/fade-out transition
+    arrows: true, // Show navigation arrows
     prevArrow: (
       <div className="slick-arrow slick-prev">
         {/* <div>&lt;</div> Left arrow symbol */}
