@@ -1,0 +1,168 @@
+.FOB-membership-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fobana_logo {
+  text-align: center;
+  margin-top: 5rem;
+  width: 16rem;
+  height: auto;
+}
+
+.FOB-membership-container h1 {
+  font-size: 2.65rem;
+  font-family: "Lucida Sans";
+  font-weight: bold;
+}
+.FOB-membership-container p {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.benefit-para {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  padding-bottom: 0.3rem;
+  text-align: justify;
+}
+
+.benefit-section,
+.leadership-section,
+.talent-section {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+}
+
+.benefit-text,
+.leadership-text,
+.talent-text {
+  width: 45%;
+  text-align: start;
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
+
+.benefit-text h2,
+.leadership-text h2,
+.talent-text h2 {
+  padding-bottom: 1rem;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #4827ed;
+}
+
+.benefit-list,
+.leadership-list,
+.talent-list {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.benefit-list li,
+.leadership-list li,
+.talent-list li {
+  padding: 0.4rem;
+}
+
+/* Image Styling */
+.benefit-image,
+.leadership-image,
+.talent-image {
+  width: 50%;
+  cursor: pointer;
+  overflow: hidden; /* Ensures the scaled image doesn't overflow */
+}
+
+/* Ensures images fit well */
+.benefit-section img,
+.leadership-section img,
+.talent-section img {
+  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+/* Hover Effect: Scales image up */
+.benefit-image:hover,
+.leadership-image:hover,
+.talent-image:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 850px) {
+  .FOB-membership-container {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .fobana_logo {
+    margin-top: 3rem;
+    width: 12rem;
+  }
+  .FOB-membership-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .FOB-membership-container p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .benefit-section,
+  .talent-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-left: -1rem;
+  }
+
+  .leadership-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-left: -1rem;
+  }
+  .benefit-image,
+  .leadership-image,
+  .talent-image {
+    width: 100%;
+  }
+  .benefit-text,
+  .leadership-text,
+  .talent-text {
+    width: 100%;
+    margin-top: -0.5rem;
+  }
+  .benefit-text h2,
+  .leadership-text h2,
+  .talent-text h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  .benefit-list,
+  .leadership-list,
+  .talent-list {
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+}

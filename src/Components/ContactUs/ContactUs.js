@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import { Link } from "react-router-dom";
 import "./ContactUsStyles.css";
 import MapComponent from "./MapLocation";
+// email.js is connected using fashionrk212@gmail.com tamplate. Mail going to fobanac@gmail.com
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -37,10 +38,10 @@ const ContactUs = () => {
 
     emailjs
       .send(
-        "service_gxj7m54",
-        "template_xcr668p",
+        "service_a2wnrfo",
+        "template_sqoppcp",
         templateParams,
-        "4Qy3fWJQ5ATnWcwXq"
+        "y1NCmHhHJJPaVsbR_"
       )
       .then(
         (response) => {

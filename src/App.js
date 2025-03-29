@@ -31,6 +31,8 @@ import BDArtist from "./Routes/BDArtists";
 import BDScholars from "./Routes/BDScholars";
 import MembershipForm from "./Routes/MembershipForm";
 import ExecMembershipFormDetails from "./Components/Membership/Exec-Com-Nomi/ExecComNomiFormDetails";
+import MembershipBenefits from "./Routes/MembershipBenefits";
+import Membership from "./Routes/Membership";
 function App() {
   return (
     <div className="App">
@@ -62,8 +64,10 @@ function App() {
         <Route path="/newsLinks" element={<NewsLink />} />
         <Route path="/bdArtist" element={<BDArtist />} />
         <Route path="/bdScholars" element={<BDScholars />} />
+        <Route path="/membership" element={<Membership />} />
         <Route path="/membershipForm" element={<MembershipForm />} />
         <Route path="/execmemberForm" element={<ExecMembershipFormDetails />} />
+        <Route path="/membersBenefit" element={<MembershipBenefits />} />
       </Routes>
     </div>
   );

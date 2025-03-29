@@ -1,0 +1,132 @@
+.summary-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.summary-container h1 {
+  font-size: 2.65rem;
+  font-family: "Lucida Sans";
+  font-weight: bold;
+}
+.mem-home-fobana_logo {
+  text-align: center;
+  margin-top: 5rem;
+  width: 16rem;
+  height: auto;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.summary-section,
+.summary-section-membership {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-section-membership {
+  flex-direction: row-reverse;
+}
+
+.summary-image {
+  width: 50%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.summary-image:hover {
+  transform: scale(1.1);
+}
+
+.summary-text {
+  width: 45%;
+  text-align: left;
+}
+
+.summary-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.summary-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.read-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Centers button */
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  width: fit-content; /* Ensures button is not too wide */
+}
+
+.read-more-btn:hover {
+  background: #0056b3;
+}
+
+@media screen and (max-width: 850px) {
+  .summary-container {
+    max-width: auto;
+    margin: auto;
+    padding: 10px;
+  }
+  .mem-home-fobana_logo {
+    margin-top: 3rem;
+    width: 12rem;
+  }
+  .summary-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .summary-container p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .summary-section,
+  .summary-section-membership {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  .summary-image {
+    width: 100%;
+  }
+  .summary-text {
+    width: 100%;
+    margin-top: -0.5rem;
+  }
+  .summary-text h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  .summary-text p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+  }
+}
