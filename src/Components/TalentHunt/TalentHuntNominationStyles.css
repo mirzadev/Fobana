@@ -1,0 +1,182 @@
+.talent-container {
+  max-width: 1200px !important;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.talent_fobana_logo {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+#talent-Fobana-logo {
+  width: 16rem;
+  height: auto;
+}
+
+.talent-header-section {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+#talent-hunt-logo {
+  width: 8rem;
+  height: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Lucida Sans";
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 98%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #2084f0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0861c0 !important;
+}
+
+.talent-payment-options {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.talent-payment-options a {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.talent-payment-options a:hover {
+  background-color: #218838;
+}
+
+.talent-pdf-download {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.talent-pdf-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgb(99, 128, 246);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.talent-pdf-button:hover {
+  background-color: rgb(54, 103, 226);
+}
+
+/* Responsive Styles */
+@media (max-width: 850px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+  input,
+  select,
+  button {
+    font-size: 16px;
+  }
+  .talent_fobana_logo {
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+  }
+  #talent-Fobana-logo {
+    width: 12rem;
+  }
+  .talent-header-section {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Creates three columns */
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Adds spacing */
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    grid-column: 2 / 3; /* Places the heading in the center column */
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  #talent-hunt-logo {
+    width: 6rem;
+    height: auto;
+  }
+  .talent-payment-options a {
+    padding: 10px 1px;
+  }
+}
+
+@media (max-width: 600px) {
+  .talent-header-section {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #talent-hunt-logo {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  #talent-hunt-logo {
+    width: 4rem;
+  }
+}
