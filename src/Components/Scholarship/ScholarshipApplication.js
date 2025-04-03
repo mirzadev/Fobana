@@ -2,6 +2,7 @@ import "./ScholarshipApplicationStyles.css";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import scholarshipBanner from "../../Assets/Cover/scholarship_docu.jpg";
+// email user for emailjs: fashionjewelry267@gmail.com
 
 const ScholarshipApplication = () => {
   const [formData, setFormData] = useState({
