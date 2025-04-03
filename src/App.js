@@ -34,6 +34,7 @@ import ExecMembershipFormDetails from "./Components/Membership/Exec-Com-Nomi/Exe
 import MembershipBenefits from "./Routes/MembershipBenefits";
 import Membership from "./Routes/Membership";
 import TalentHunt from "./Routes/TalentHunt";
+import Scholarship from "./Routes/Scholarship";
 function App() {
   return (
     <div className="App">
@@ -70,6 +71,7 @@ function App() {
         <Route path="/execmemberForm" element={<ExecMembershipFormDetails />} />
         <Route path="/membersBenefit" element={<MembershipBenefits />} />
         <Route path="/talent" element={<TalentHunt />} />
+        <Route path="/scholarship" element={<Scholarship />} />
       </Routes>
     </div>
   );
