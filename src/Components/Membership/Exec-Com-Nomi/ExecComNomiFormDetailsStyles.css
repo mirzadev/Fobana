@@ -107,6 +107,9 @@ button:hover {
 .membership-pdf-button:hover {
   background-color: rgb(54, 103, 226);
 }
+.required {
+  color: red;
+}
 
 /* Responsive Styles */
 @media (max-width: 850px) {

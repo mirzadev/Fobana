@@ -35,6 +35,7 @@ import MembershipBenefits from "./Routes/MembershipBenefits";
 import Membership from "./Routes/Membership";
 import TalentHunt from "./Routes/TalentHunt";
 import Scholarship from "./Routes/Scholarship";
+import OnlinePayment from "./Routes/OnlinePayments";
 function App() {
   return (
     <div className="App">
@@ -72,6 +73,7 @@ function App() {
         <Route path="/membersBenefit" element={<MembershipBenefits />} />
         <Route path="/talent" element={<TalentHunt />} />
         <Route path="/scholarship" element={<Scholarship />} />
+        <Route path="/payment" element={<OnlinePayment />} />
       </Routes>
     </div>
   );
